@@ -44,7 +44,10 @@ namespace ClassLibrary3.Modele.Ludzie
         /// represents password
         /// </summary>
         public string Haslo { get; set; }
-
+        /// <summary>
+        /// email
+        /// </summary>
+        public string Email { get; set; }
         /// <summary>
         /// gets firstname and surname
         /// </summary>

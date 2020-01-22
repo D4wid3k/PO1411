@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary3.Modele.Reszta;
+using ClassLibrary3;
 
 namespace Dziekanat
 {
@@ -25,6 +27,42 @@ namespace Dziekanat
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void StworzKierButton_Click(object sender, EventArgs e)
+        {
+            if (ValidateForm())
+            {
+                KierunekModel kierunek = new KierunekModel();
+                kierunek.Nazwa = NazwaKierTextbox.Text;
+                kierunek.RokRozpoczecia = RokRozpTextbox.Text;
+
+                GlobalConfig.Connections.DodajKierunek(kierunek);
+
+            }
+            else
+            {
+                MessageBox.Show("Dane niepoprawne");
+            }
+
+            NazwaKierTextbox.Text = "";
+            RokRozpTextbox.Text = "";
+        }
+
+        private bool ValidateForm()
+        {
+            bool output = true;
+
+            if (NazwaKierTextbox.Text.Length == 0)
+            {
+                output = false;
+            }
+            if (RokRozpTextbox.Text.Length == 0)
+            {
+                output = false;
+            }
+
+            return output;
         }
     }
 }
