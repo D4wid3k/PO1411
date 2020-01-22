@@ -114,6 +114,12 @@
     <Compile Include="WstawOceny.Designer.cs">
       <DependentUpon>WstawOceny.cs</DependentUpon>
     </Compile>
+    <Compile Include="WysylanieWniosku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WysylanieWniosku.Designer.cs">
+      <DependentUpon>WysylanieWniosku.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZmienOceny.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WstawOceny.resx">
       <DependentUpon>WstawOceny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WysylanieWniosku.resx">
+      <DependentUpon>WysylanieWniosku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZmienOceny.resx">
       <DependentUpon>ZmienOceny.cs</DependentUpon>
