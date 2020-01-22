@@ -13,5 +13,6 @@ namespace ClassLibrary3.DataAccess
     public interface IDataConnection
     {
         List<WniosekModel> PobierzWnioski();
+        void DodajKierunek(KierunekModel kierunek);
     }
 }
