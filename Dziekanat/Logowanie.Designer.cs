@@ -28,97 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ZalogujButton = new System.Windows.Forms.Button();
+            this.LogHeader = new System.Windows.Forms.Label();
+            this.LoginTextbox = new System.Windows.Forms.TextBox();
+            this.HasloTextbox = new System.Windows.Forms.TextBox();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.HasloLabel = new System.Windows.Forms.Label();
+            this.RejestracjaButton = new System.Windows.Forms.Button();
+            this.CzyKandLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // ZalogujButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(276, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 67);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Zaloguj";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ZalogujButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.ZalogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ZalogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ZalogujButton.Location = new System.Drawing.Point(276, 247);
+            this.ZalogujButton.Name = "ZalogujButton";
+            this.ZalogujButton.Size = new System.Drawing.Size(155, 67);
+            this.ZalogujButton.TabIndex = 0;
+            this.ZalogujButton.Text = "Zaloguj";
+            this.ZalogujButton.UseVisualStyleBackColor = false;
+            this.ZalogujButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // LogHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(258, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Logowanie";
+            this.LogHeader.AutoSize = true;
+            this.LogHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LogHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.LogHeader.Location = new System.Drawing.Point(258, 28);
+            this.LogHeader.Name = "LogHeader";
+            this.LogHeader.Size = new System.Drawing.Size(184, 45);
+            this.LogHeader.TabIndex = 1;
+            this.LogHeader.Text = "Logowanie";
             // 
-            // textBox1
+            // LoginTextbox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(221, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 30);
-            this.textBox1.TabIndex = 2;
+            this.LoginTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.LoginTextbox.Location = new System.Drawing.Point(221, 139);
+            this.LoginTextbox.Name = "LoginTextbox";
+            this.LoginTextbox.Size = new System.Drawing.Size(263, 30);
+            this.LoginTextbox.TabIndex = 2;
             // 
-            // textBox2
+            // HasloTextbox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(221, 197);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 30);
-            this.textBox2.TabIndex = 3;
+            this.HasloTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.HasloTextbox.Location = new System.Drawing.Point(221, 197);
+            this.HasloTextbox.Name = "HasloTextbox";
+            this.HasloTextbox.Size = new System.Drawing.Size(263, 30);
+            this.HasloTextbox.TabIndex = 3;
             // 
-            // label2
+            // LoginLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(218, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Login:";
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.LoginLabel.Location = new System.Drawing.Point(218, 119);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(47, 17);
+            this.LoginLabel.TabIndex = 4;
+            this.LoginLabel.Text = "Login:";
             // 
-            // label3
+            // HasloLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(218, 177);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Haslo:";
+            this.HasloLabel.AutoSize = true;
+            this.HasloLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.HasloLabel.Location = new System.Drawing.Point(218, 177);
+            this.HasloLabel.Name = "HasloLabel";
+            this.HasloLabel.Size = new System.Drawing.Size(48, 17);
+            this.HasloLabel.TabIndex = 5;
+            this.HasloLabel.Text = "Haslo:";
             // 
-            // button2
+            // RejestracjaButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(276, 405);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Rejestracja";
-            this.button2.UseVisualStyleBackColor = false;
+            this.RejestracjaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.RejestracjaButton.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.RejestracjaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.RejestracjaButton.Location = new System.Drawing.Point(276, 405);
+            this.RejestracjaButton.Name = "RejestracjaButton";
+            this.RejestracjaButton.Size = new System.Drawing.Size(155, 34);
+            this.RejestracjaButton.TabIndex = 6;
+            this.RejestracjaButton.Text = "Rejestracja";
+            this.RejestracjaButton.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // CzyKandLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(283, 385);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Jesteś kandydatem?";
+            this.CzyKandLabel.AutoSize = true;
+            this.CzyKandLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.CzyKandLabel.Location = new System.Drawing.Point(283, 385);
+            this.CzyKandLabel.Name = "CzyKandLabel";
+            this.CzyKandLabel.Size = new System.Drawing.Size(138, 17);
+            this.CzyKandLabel.TabIndex = 7;
+            this.CzyKandLabel.Text = "Jesteś kandydatem?";
             // 
             // Logowanie
             // 
@@ -126,14 +126,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(699, 485);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CzyKandLabel);
+            this.Controls.Add(this.RejestracjaButton);
+            this.Controls.Add(this.HasloLabel);
+            this.Controls.Add(this.LoginLabel);
+            this.Controls.Add(this.HasloTextbox);
+            this.Controls.Add(this.LoginTextbox);
+            this.Controls.Add(this.LogHeader);
+            this.Controls.Add(this.ZalogujButton);
             this.Name = "Logowanie";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -143,14 +143,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button ZalogujButton;
+        private System.Windows.Forms.Label LogHeader;
+        private System.Windows.Forms.TextBox LoginTextbox;
+        private System.Windows.Forms.TextBox HasloTextbox;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.Label HasloLabel;
+        private System.Windows.Forms.Button RejestracjaButton;
+        private System.Windows.Forms.Label CzyKandLabel;
     }
 }
 

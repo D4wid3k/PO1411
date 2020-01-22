@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.OcenyHeader = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,17 +52,17 @@
             this.listBox10 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // label1
+            // OcenyHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(24, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Oceny";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.OcenyHeader.AutoSize = true;
+            this.OcenyHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OcenyHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.OcenyHeader.Location = new System.Drawing.Point(24, 32);
+            this.OcenyHeader.Name = "OcenyHeader";
+            this.OcenyHeader.Size = new System.Drawing.Size(115, 45);
+            this.OcenyHeader.TabIndex = 0;
+            this.OcenyHeader.Text = "Oceny";
+            this.OcenyHeader.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -335,7 +335,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.OcenyHeader);
             this.Name = "Oceny";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -345,7 +345,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label OcenyHeader;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
