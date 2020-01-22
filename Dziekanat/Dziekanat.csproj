@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rejestracja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rejestracja.Designer.cs">
+      <DependentUpon>Rejestracja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wnioski.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rejestracja.resx">
+      <DependentUpon>Rejestracja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wnioski.resx">
       <DependentUpon>Wnioski.cs</DependentUpon>
     </EmbeddedResource>
