@@ -20,9 +20,9 @@ namespace Dziekanat
             Application.SetCompatibleTextRenderingDefault(false);
 
             //initialize Data base 
-            ClassLibrary3.GlobalConfig.InitializeConnections(DatabaseType.Sql);
+            ClassLibrary3.GlobalConfig.InitializeConnections();
 
-            Application.Run(new Logowanie());
+            Application.Run(new Wnioski());
         }
     }
 }

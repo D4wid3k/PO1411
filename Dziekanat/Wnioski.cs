@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary3;
-using ClassLibrary3.
+using ClassLibrary3.Modele.Reszta;
 
 namespace Dziekanat
 {  
     public partial class Wnioski : Form
     {
-        private List<WniosekModel> allLeki = new List<WniosekModel>();
+        private List<WniosekModel> _Wnioski = new List<WniosekModel>();
         public Wnioski()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace Dziekanat
 
         private void zaladuj_liste()
         {
-            allLeki = GlobalConfig.Connections.GetLeki_All();
+            _Wnioski = GlobalConfig.Connections.PobierzWnioski();
         }
 
         private void WireUpLists()
@@ -44,8 +44,8 @@ namespace Dziekanat
             /* LekarzeListBox.DataSource = allLekarzUsers;
              LekarzeListBox.DisplayMember = "FullName";*/
 
-            LisalekowDropdown.DataSource = allLeki;
-            LisalekowDropdown.DisplayMember = "Nazwa_leku";
+            ListaWnioskowListbox.DataSource = _Wnioski;
+            ListaWnioskowListbox.DisplayMember = "zawartosc";
 
         }
     }
