@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ClassLibrary3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Dziekanat
 {
@@ -16,6 +18,10 @@ namespace Dziekanat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //initialize Data base 
+            ClassLibrary3.GlobalConfig.InitializeConnections(DatabaseType.Sql);
+
             Application.Run(new Logowanie());
         }
     }
