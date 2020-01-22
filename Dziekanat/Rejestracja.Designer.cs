@@ -194,9 +194,9 @@
             this.Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.Button.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.Button.Location = new System.Drawing.Point(647, 537);
+            this.Button.Location = new System.Drawing.Point(643, 539);
             this.Button.Name = "Button";
-            this.Button.Size = new System.Drawing.Size(141, 61);
+            this.Button.Size = new System.Drawing.Size(145, 59);
             this.Button.TabIndex = 17;
             this.Button.Text = "Powrot";
             this.Button.UseVisualStyleBackColor = false;
