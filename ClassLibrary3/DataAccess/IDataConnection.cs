@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary3.Modele;
 
 namespace ClassLibrary3.DataAccess
 {
-    class SQLConnector : IDataConnection
+    public interface IDataConnection
     {
+
     }
 }

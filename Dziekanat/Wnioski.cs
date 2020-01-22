@@ -21,5 +21,9 @@ namespace Dziekanat
         {
 
         }
+        private void UsunWniosekButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
