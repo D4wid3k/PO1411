@@ -45,10 +45,6 @@ namespace ClassLibrary3.Modele.Ludzie
         /// </summary>
         public string Haslo { get; set; }
         /// <summary>
-        /// email
-        /// </summary>
-        public string Email { get; set; }
-        /// <summary>
         /// gets firstname and surname
         /// </summary>
         public string Full_Name
