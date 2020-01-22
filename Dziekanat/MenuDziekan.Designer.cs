@@ -28,59 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DziekanetLabel = new System.Windows.Forms.Label();
+            this.WnioskiButton = new System.Windows.Forms.Button();
+            this.KierunkiButton = new System.Windows.Forms.Button();
+            this.WylogujButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label2
+            // DziekanetLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(151, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(224, 45);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "DZIEKAN.NET";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.DziekanetLabel.AutoSize = true;
+            this.DziekanetLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
+            this.DziekanetLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.DziekanetLabel.Location = new System.Drawing.Point(151, 53);
+            this.DziekanetLabel.Name = "DziekanetLabel";
+            this.DziekanetLabel.Size = new System.Drawing.Size(224, 45);
+            this.DziekanetLabel.TabIndex = 4;
+            this.DziekanetLabel.Text = "DZIEKAN.NET";
+            this.DziekanetLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button4
+            // WnioskiButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(196, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 62);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Wnioski";
-            this.button4.UseVisualStyleBackColor = false;
+            this.WnioskiButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WnioskiButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.WnioskiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WnioskiButton.Location = new System.Drawing.Point(196, 225);
+            this.WnioskiButton.Name = "WnioskiButton";
+            this.WnioskiButton.Size = new System.Drawing.Size(149, 62);
+            this.WnioskiButton.TabIndex = 10;
+            this.WnioskiButton.Text = "Wnioski";
+            this.WnioskiButton.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // KierunkiButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(196, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 62);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Kierunki";
-            this.button1.UseVisualStyleBackColor = false;
+            this.KierunkiButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.KierunkiButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.KierunkiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.KierunkiButton.Location = new System.Drawing.Point(196, 157);
+            this.KierunkiButton.Name = "KierunkiButton";
+            this.KierunkiButton.Size = new System.Drawing.Size(149, 62);
+            this.KierunkiButton.TabIndex = 11;
+            this.KierunkiButton.Text = "Kierunki";
+            this.KierunkiButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // WylogujButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(372, 365);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 62);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Wyloguj";
-            this.button2.UseVisualStyleBackColor = false;
+            this.WylogujButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WylogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.WylogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WylogujButton.Location = new System.Drawing.Point(372, 365);
+            this.WylogujButton.Name = "WylogujButton";
+            this.WylogujButton.Size = new System.Drawing.Size(149, 62);
+            this.WylogujButton.TabIndex = 12;
+            this.WylogujButton.Text = "Wyloguj";
+            this.WylogujButton.UseVisualStyleBackColor = false;
             // 
             // MenuDziekan
             // 
@@ -88,10 +88,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(533, 439);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.WylogujButton);
+            this.Controls.Add(this.KierunkiButton);
+            this.Controls.Add(this.WnioskiButton);
+            this.Controls.Add(this.DziekanetLabel);
             this.Name = "MenuDziekan";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -101,9 +101,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label DziekanetLabel;
+        private System.Windows.Forms.Button WnioskiButton;
+        private System.Windows.Forms.Button KierunkiButton;
+        private System.Windows.Forms.Button WylogujButton;
     }
 }

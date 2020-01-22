@@ -28,84 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ImieLabel = new System.Windows.Forms.Label();
+            this.WitajLabel = new System.Windows.Forms.Label();
+            this.PlanLabel = new System.Windows.Forms.Button();
+            this.WylogujLabel = new System.Windows.Forms.Button();
+            this.DodajOcLabel = new System.Windows.Forms.Button();
+            this.ZmienOcLabel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label2
+            // ImieLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(266, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 45);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Imie";
+            this.ImieLabel.AutoSize = true;
+            this.ImieLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
+            this.ImieLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ImieLabel.Location = new System.Drawing.Point(266, 48);
+            this.ImieLabel.Name = "ImieLabel";
+            this.ImieLabel.Size = new System.Drawing.Size(86, 45);
+            this.ImieLabel.TabIndex = 3;
+            this.ImieLabel.Text = "Imie";
             // 
-            // label1
+            // WitajLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(181, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 45);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Witaj";
+            this.WitajLabel.AutoSize = true;
+            this.WitajLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
+            this.WitajLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WitajLabel.Location = new System.Drawing.Point(181, 48);
+            this.WitajLabel.Name = "WitajLabel";
+            this.WitajLabel.Size = new System.Drawing.Size(99, 45);
+            this.WitajLabel.TabIndex = 2;
+            this.WitajLabel.Text = "Witaj";
             // 
-            // button1
+            // PlanLabel
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(193, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 62);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Plan";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.PlanLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PlanLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.PlanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PlanLabel.Location = new System.Drawing.Point(193, 295);
+            this.PlanLabel.Name = "PlanLabel";
+            this.PlanLabel.Size = new System.Drawing.Size(149, 62);
+            this.PlanLabel.TabIndex = 7;
+            this.PlanLabel.Text = "Plan";
+            this.PlanLabel.UseVisualStyleBackColor = false;
+            this.PlanLabel.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // WylogujLabel
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(348, 456);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 62);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Wyloguj";
-            this.button2.UseVisualStyleBackColor = false;
+            this.WylogujLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WylogujLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.WylogujLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WylogujLabel.Location = new System.Drawing.Point(348, 456);
+            this.WylogujLabel.Name = "WylogujLabel";
+            this.WylogujLabel.Size = new System.Drawing.Size(149, 62);
+            this.WylogujLabel.TabIndex = 5;
+            this.WylogujLabel.Text = "Wyloguj";
+            this.WylogujLabel.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // DodajOcLabel
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(193, 159);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 62);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Dodaj oceny";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DodajOcLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.DodajOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.DodajOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.DodajOcLabel.Location = new System.Drawing.Point(193, 159);
+            this.DodajOcLabel.Name = "DodajOcLabel";
+            this.DodajOcLabel.Size = new System.Drawing.Size(149, 62);
+            this.DodajOcLabel.TabIndex = 6;
+            this.DodajOcLabel.Text = "Dodaj oceny";
+            this.DodajOcLabel.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // ZmienOcLabel
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(193, 227);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 62);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Zmien oceny";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ZmienOcLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.ZmienOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ZmienOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ZmienOcLabel.Location = new System.Drawing.Point(193, 227);
+            this.ZmienOcLabel.Name = "ZmienOcLabel";
+            this.ZmienOcLabel.Size = new System.Drawing.Size(149, 62);
+            this.ZmienOcLabel.TabIndex = 8;
+            this.ZmienOcLabel.Text = "Zmien oceny";
+            this.ZmienOcLabel.UseVisualStyleBackColor = false;
             // 
             // MenuPracownik
             // 
@@ -113,12 +113,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(509, 530);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ZmienOcLabel);
+            this.Controls.Add(this.PlanLabel);
+            this.Controls.Add(this.DodajOcLabel);
+            this.Controls.Add(this.ImieLabel);
+            this.Controls.Add(this.WylogujLabel);
+            this.Controls.Add(this.WitajLabel);
             this.Name = "MenuPracownik";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -128,11 +128,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label ImieLabel;
+        private System.Windows.Forms.Label WitajLabel;
+        private System.Windows.Forms.Button PlanLabel;
+        private System.Windows.Forms.Button WylogujLabel;
+        private System.Windows.Forms.Button DodajOcLabel;
+        private System.Windows.Forms.Button ZmienOcLabel;
     }
 }
