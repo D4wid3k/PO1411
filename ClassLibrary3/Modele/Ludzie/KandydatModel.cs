@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Ludzie
 {
-    public class KandydatModel
+    public class KandydatModel: PersonModel
     {
         public int WynikRekrutacyjny { get; set; }
 
