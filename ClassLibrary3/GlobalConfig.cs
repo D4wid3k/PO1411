@@ -21,6 +21,8 @@ namespace ClassLibrary3
             SQLConnector sql = new SQLConnector();
             //dodaje sql do listy połączeń
             Connections = sql;
+
+            //siusiak
         }
 
         public static string CnnString(string name)
