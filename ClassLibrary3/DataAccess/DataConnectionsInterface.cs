@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.DataAccess
 {
-    interface DataConnectionsInterface
+   public interface DataConnectionsInterface
     {
     }
 }
