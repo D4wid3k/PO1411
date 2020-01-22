@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary3.Modele.Ludzie;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,9 @@ namespace Dziekanat
 {
     public partial class MenuStudent : Form
     {
-        public MenuStudent()
+        public PersonModel p { get; set; }
+
+        public MenuStudent(PersonModel model)
         {
             InitializeComponent();
         }
