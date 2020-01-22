@@ -28,159 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.PlanLabel = new System.Windows.Forms.Label();
+            this.PonListbox = new System.Windows.Forms.ListBox();
+            this.WtoListbox = new System.Windows.Forms.ListBox();
+            this.SroListbox = new System.Windows.Forms.ListBox();
+            this.CzwListbox = new System.Windows.Forms.ListBox();
+            this.PiaListbox = new System.Windows.Forms.ListBox();
+            this.PowrotButton = new System.Windows.Forms.Button();
+            this.PonLabel = new System.Windows.Forms.Label();
+            this.WtoLabel = new System.Windows.Forms.Label();
+            this.SroLabel = new System.Windows.Forms.Label();
+            this.CzwLabel = new System.Windows.Forms.Label();
+            this.PiaLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // PlanLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(19, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Plan zajec";
+            this.PlanLabel.AutoSize = true;
+            this.PlanLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PlanLabel.Location = new System.Drawing.Point(19, 26);
+            this.PlanLabel.Name = "PlanLabel";
+            this.PlanLabel.Size = new System.Drawing.Size(168, 45);
+            this.PlanLabel.TabIndex = 0;
+            this.PlanLabel.Text = "Plan zajec";
             // 
-            // listBox1
+            // PonListbox
             // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(27, 132);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(182, 242);
-            this.listBox1.TabIndex = 1;
+            this.PonListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PonListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PonListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PonListbox.FormattingEnabled = true;
+            this.PonListbox.ItemHeight = 16;
+            this.PonListbox.Location = new System.Drawing.Point(27, 132);
+            this.PonListbox.Name = "PonListbox";
+            this.PonListbox.Size = new System.Drawing.Size(182, 242);
+            this.PonListbox.TabIndex = 1;
             // 
-            // listBox2
+            // WtoListbox
             // 
-            this.listBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(239, 132);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(182, 242);
-            this.listBox2.TabIndex = 2;
+            this.WtoListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WtoListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WtoListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WtoListbox.FormattingEnabled = true;
+            this.WtoListbox.ItemHeight = 16;
+            this.WtoListbox.Location = new System.Drawing.Point(239, 132);
+            this.WtoListbox.Name = "WtoListbox";
+            this.WtoListbox.Size = new System.Drawing.Size(182, 242);
+            this.WtoListbox.TabIndex = 2;
             // 
-            // listBox3
+            // SroListbox
             // 
-            this.listBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(455, 132);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(182, 242);
-            this.listBox3.TabIndex = 3;
+            this.SroListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.SroListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SroListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.SroListbox.FormattingEnabled = true;
+            this.SroListbox.ItemHeight = 16;
+            this.SroListbox.Location = new System.Drawing.Point(455, 132);
+            this.SroListbox.Name = "SroListbox";
+            this.SroListbox.Size = new System.Drawing.Size(182, 242);
+            this.SroListbox.TabIndex = 3;
             // 
-            // listBox4
+            // CzwListbox
             // 
-            this.listBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(671, 132);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(182, 242);
-            this.listBox4.TabIndex = 4;
+            this.CzwListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.CzwListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CzwListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.CzwListbox.FormattingEnabled = true;
+            this.CzwListbox.ItemHeight = 16;
+            this.CzwListbox.Location = new System.Drawing.Point(671, 132);
+            this.CzwListbox.Name = "CzwListbox";
+            this.CzwListbox.Size = new System.Drawing.Size(182, 242);
+            this.CzwListbox.TabIndex = 4;
             // 
-            // listBox5
+            // PiaListbox
             // 
-            this.listBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 16;
-            this.listBox5.Location = new System.Drawing.Point(888, 132);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(182, 242);
-            this.listBox5.TabIndex = 5;
+            this.PiaListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PiaListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PiaListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PiaListbox.FormattingEnabled = true;
+            this.PiaListbox.ItemHeight = 16;
+            this.PiaListbox.Location = new System.Drawing.Point(888, 132);
+            this.PiaListbox.Name = "PiaListbox";
+            this.PiaListbox.Size = new System.Drawing.Size(182, 242);
+            this.PiaListbox.TabIndex = 5;
             // 
-            // button1
+            // PowrotButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(27, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 51);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Powrot";
-            this.button1.UseVisualStyleBackColor = false;
+            this.PowrotButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PowrotButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PowrotButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PowrotButton.Location = new System.Drawing.Point(27, 409);
+            this.PowrotButton.Name = "PowrotButton";
+            this.PowrotButton.Size = new System.Drawing.Size(182, 51);
+            this.PowrotButton.TabIndex = 6;
+            this.PowrotButton.Text = "Powrot";
+            this.PowrotButton.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // PonLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(22, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Poniedzialek:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.PonLabel.AutoSize = true;
+            this.PonLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PonLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PonLabel.Location = new System.Drawing.Point(22, 104);
+            this.PonLabel.Name = "PonLabel";
+            this.PonLabel.Size = new System.Drawing.Size(130, 25);
+            this.PonLabel.TabIndex = 7;
+            this.PonLabel.Text = "Poniedzialek:";
+            this.PonLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // WtoLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(234, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Wtorek:";
+            this.WtoLabel.AutoSize = true;
+            this.WtoLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.WtoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WtoLabel.Location = new System.Drawing.Point(234, 104);
+            this.WtoLabel.Name = "WtoLabel";
+            this.WtoLabel.Size = new System.Drawing.Size(85, 25);
+            this.WtoLabel.TabIndex = 8;
+            this.WtoLabel.Text = "Wtorek:";
             // 
-            // label4
+            // SroLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(450, 104);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Sroda:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.SroLabel.AutoSize = true;
+            this.SroLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.SroLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.SroLabel.Location = new System.Drawing.Point(450, 104);
+            this.SroLabel.Name = "SroLabel";
+            this.SroLabel.Size = new System.Drawing.Size(70, 25);
+            this.SroLabel.TabIndex = 9;
+            this.SroLabel.Text = "Sroda:";
+            this.SroLabel.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // CzwLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(666, 104);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 25);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Czwartek:";
+            this.CzwLabel.AutoSize = true;
+            this.CzwLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.CzwLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.CzwLabel.Location = new System.Drawing.Point(666, 104);
+            this.CzwLabel.Name = "CzwLabel";
+            this.CzwLabel.Size = new System.Drawing.Size(101, 25);
+            this.CzwLabel.TabIndex = 10;
+            this.CzwLabel.Text = "Czwartek:";
             // 
-            // label6
+            // PiaLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(883, 104);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 25);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Piatek:";
+            this.PiaLabel.AutoSize = true;
+            this.PiaLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.PiaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PiaLabel.Location = new System.Drawing.Point(883, 104);
+            this.PiaLabel.Name = "PiaLabel";
+            this.PiaLabel.Size = new System.Drawing.Size(73, 25);
+            this.PiaLabel.TabIndex = 11;
+            this.PiaLabel.Text = "Piatek:";
             // 
             // Plan
             // 
@@ -188,18 +188,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1095, 488);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PiaLabel);
+            this.Controls.Add(this.CzwLabel);
+            this.Controls.Add(this.SroLabel);
+            this.Controls.Add(this.WtoLabel);
+            this.Controls.Add(this.PonLabel);
+            this.Controls.Add(this.PowrotButton);
+            this.Controls.Add(this.PiaListbox);
+            this.Controls.Add(this.CzwListbox);
+            this.Controls.Add(this.SroListbox);
+            this.Controls.Add(this.WtoListbox);
+            this.Controls.Add(this.PonListbox);
+            this.Controls.Add(this.PlanLabel);
             this.Name = "Plan";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -209,17 +209,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label PlanLabel;
+        private System.Windows.Forms.ListBox PonListbox;
+        private System.Windows.Forms.ListBox WtoListbox;
+        private System.Windows.Forms.ListBox SroListbox;
+        private System.Windows.Forms.ListBox CzwListbox;
+        private System.Windows.Forms.ListBox PiaListbox;
+        private System.Windows.Forms.Button PowrotButton;
+        private System.Windows.Forms.Label PonLabel;
+        private System.Windows.Forms.Label WtoLabel;
+        private System.Windows.Forms.Label SroLabel;
+        private System.Windows.Forms.Label CzwLabel;
+        private System.Windows.Forms.Label PiaLabel;
     }
 }

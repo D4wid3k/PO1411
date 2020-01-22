@@ -28,180 +28,180 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.ZmienOceneHeader = new System.Windows.Forms.Label();
+            this.WybGrupZatwButton = new System.Windows.Forms.Button();
+            this.WybGrupCombobox = new System.Windows.Forms.ComboBox();
+            this.WybGrupLabel = new System.Windows.Forms.Label();
+            this.PokazOcenButton = new System.Windows.Forms.Button();
+            this.ListaOcenLabel = new System.Windows.Forms.Label();
+            this.ListaStudLabel = new System.Windows.Forms.Label();
+            this.ListaOcenListbox = new System.Windows.Forms.ListBox();
+            this.ListaStudListbox = new System.Windows.Forms.ListBox();
+            this.DokZmianButton = new System.Windows.Forms.Button();
+            this.UsunOcButton = new System.Windows.Forms.Button();
+            this.ZmienOcenCombobox = new System.Windows.Forms.ComboBox();
+            this.ZmienOcenLabel = new System.Windows.Forms.Label();
+            this.PowrotButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // ZmienOceneHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(24, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Zmien Ocene";
+            this.ZmienOceneHeader.AutoSize = true;
+            this.ZmienOceneHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
+            this.ZmienOceneHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ZmienOceneHeader.Location = new System.Drawing.Point(24, 26);
+            this.ZmienOceneHeader.Name = "ZmienOceneHeader";
+            this.ZmienOceneHeader.Size = new System.Drawing.Size(219, 45);
+            this.ZmienOceneHeader.TabIndex = 1;
+            this.ZmienOceneHeader.Text = "Zmien Ocene";
             // 
-            // button1
+            // WybGrupZatwButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(32, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 61);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Zatwierdz";
-            this.button1.UseVisualStyleBackColor = false;
+            this.WybGrupZatwButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WybGrupZatwButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.WybGrupZatwButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WybGrupZatwButton.Location = new System.Drawing.Point(32, 253);
+            this.WybGrupZatwButton.Name = "WybGrupZatwButton";
+            this.WybGrupZatwButton.Size = new System.Drawing.Size(167, 61);
+            this.WybGrupZatwButton.TabIndex = 3;
+            this.WybGrupZatwButton.Text = "Zatwierdz";
+            this.WybGrupZatwButton.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // WybGrupCombobox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 201);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 31);
-            this.comboBox1.TabIndex = 1;
+            this.WybGrupCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.WybGrupCombobox.FormattingEnabled = true;
+            this.WybGrupCombobox.Location = new System.Drawing.Point(32, 201);
+            this.WybGrupCombobox.Name = "WybGrupCombobox";
+            this.WybGrupCombobox.Size = new System.Drawing.Size(167, 31);
+            this.WybGrupCombobox.TabIndex = 1;
             // 
-            // label2
+            // WybGrupLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(28, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Wybierz grupe:";
+            this.WybGrupLabel.AutoSize = true;
+            this.WybGrupLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.WybGrupLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WybGrupLabel.Location = new System.Drawing.Point(28, 178);
+            this.WybGrupLabel.Name = "WybGrupLabel";
+            this.WybGrupLabel.Size = new System.Drawing.Size(122, 20);
+            this.WybGrupLabel.TabIndex = 2;
+            this.WybGrupLabel.Text = "Wybierz grupe:";
             // 
-            // button3
+            // PokazOcenButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(245, 514);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 61);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Pokaz oceny";
-            this.button3.UseVisualStyleBackColor = false;
+            this.PokazOcenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PokazOcenButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.PokazOcenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PokazOcenButton.Location = new System.Drawing.Point(245, 514);
+            this.PokazOcenButton.Name = "PokazOcenButton";
+            this.PokazOcenButton.Size = new System.Drawing.Size(167, 61);
+            this.PokazOcenButton.TabIndex = 15;
+            this.PokazOcenButton.Text = "Pokaz oceny";
+            this.PokazOcenButton.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // ListaOcenLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(440, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Lista ocen:";
+            this.ListaOcenLabel.AutoSize = true;
+            this.ListaOcenLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.ListaOcenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ListaOcenLabel.Location = new System.Drawing.Point(440, 105);
+            this.ListaOcenLabel.Name = "ListaOcenLabel";
+            this.ListaOcenLabel.Size = new System.Drawing.Size(105, 25);
+            this.ListaOcenLabel.TabIndex = 14;
+            this.ListaOcenLabel.Text = "Lista ocen:";
             // 
-            // label3
+            // ListaStudLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(227, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 25);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Lista studentow:";
+            this.ListaStudLabel.AutoSize = true;
+            this.ListaStudLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.ListaStudLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ListaStudLabel.Location = new System.Drawing.Point(227, 105);
+            this.ListaStudLabel.Name = "ListaStudLabel";
+            this.ListaStudLabel.Size = new System.Drawing.Size(157, 25);
+            this.ListaStudLabel.TabIndex = 13;
+            this.ListaStudLabel.Text = "Lista studentow:";
             // 
-            // listBox2
+            // ListaOcenListbox
             // 
-            this.listBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(445, 133);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(201, 354);
-            this.listBox2.TabIndex = 12;
+            this.ListaOcenListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.ListaOcenListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListaOcenListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ListaOcenListbox.FormattingEnabled = true;
+            this.ListaOcenListbox.ItemHeight = 16;
+            this.ListaOcenListbox.Location = new System.Drawing.Point(445, 133);
+            this.ListaOcenListbox.Name = "ListaOcenListbox";
+            this.ListaOcenListbox.Size = new System.Drawing.Size(201, 354);
+            this.ListaOcenListbox.TabIndex = 12;
             // 
-            // listBox1
+            // ListaStudListbox
             // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(232, 133);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(193, 354);
-            this.listBox1.TabIndex = 11;
+            this.ListaStudListbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.ListaStudListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListaStudListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ListaStudListbox.FormattingEnabled = true;
+            this.ListaStudListbox.ItemHeight = 16;
+            this.ListaStudListbox.Location = new System.Drawing.Point(232, 133);
+            this.ListaStudListbox.Name = "ListaStudListbox";
+            this.ListaStudListbox.Size = new System.Drawing.Size(193, 354);
+            this.ListaStudListbox.TabIndex = 11;
             // 
-            // button2
+            // DokZmianButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(689, 253);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 61);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Dokonaj zmiany";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.DokZmianButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.DokZmianButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.DokZmianButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.DokZmianButton.Location = new System.Drawing.Point(689, 253);
+            this.DokZmianButton.Name = "DokZmianButton";
+            this.DokZmianButton.Size = new System.Drawing.Size(167, 61);
+            this.DokZmianButton.TabIndex = 16;
+            this.DokZmianButton.Text = "Dokonaj zmiany";
+            this.DokZmianButton.UseVisualStyleBackColor = false;
+            this.DokZmianButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button4
+            // UsunOcButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(689, 374);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 61);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Usun ocene";
-            this.button4.UseVisualStyleBackColor = false;
+            this.UsunOcButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.UsunOcButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.UsunOcButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.UsunOcButton.Location = new System.Drawing.Point(689, 374);
+            this.UsunOcButton.Name = "UsunOcButton";
+            this.UsunOcButton.Size = new System.Drawing.Size(167, 61);
+            this.UsunOcButton.TabIndex = 17;
+            this.UsunOcButton.Text = "Usun ocene";
+            this.UsunOcButton.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // ZmienOcenCombobox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(689, 201);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(167, 31);
-            this.comboBox2.TabIndex = 18;
+            this.ZmienOcenCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ZmienOcenCombobox.FormattingEnabled = true;
+            this.ZmienOcenCombobox.Location = new System.Drawing.Point(689, 201);
+            this.ZmienOcenCombobox.Name = "ZmienOcenCombobox";
+            this.ZmienOcenCombobox.Size = new System.Drawing.Size(167, 31);
+            this.ZmienOcenCombobox.TabIndex = 18;
             // 
-            // label5
+            // ZmienOcenLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(685, 178);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 20);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Zmien ocene:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.ZmienOcenLabel.AutoSize = true;
+            this.ZmienOcenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.ZmienOcenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.ZmienOcenLabel.Location = new System.Drawing.Point(685, 178);
+            this.ZmienOcenLabel.Name = "ZmienOcenLabel";
+            this.ZmienOcenLabel.Size = new System.Drawing.Size(109, 20);
+            this.ZmienOcenLabel.TabIndex = 19;
+            this.ZmienOcenLabel.Text = "Zmien ocene:";
+            this.ZmienOcenLabel.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button5
+            // PowrotButton
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(32, 514);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 61);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Powrot";
-            this.button5.UseVisualStyleBackColor = false;
+            this.PowrotButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PowrotButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.PowrotButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.PowrotButton.Location = new System.Drawing.Point(32, 514);
+            this.PowrotButton.Name = "PowrotButton";
+            this.PowrotButton.Size = new System.Drawing.Size(167, 61);
+            this.PowrotButton.TabIndex = 20;
+            this.PowrotButton.Text = "Powrot";
+            this.PowrotButton.UseVisualStyleBackColor = false;
             // 
             // ZmienOceny
             // 
@@ -209,20 +209,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(910, 602);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PowrotButton);
+            this.Controls.Add(this.ZmienOcenLabel);
+            this.Controls.Add(this.ZmienOcenCombobox);
+            this.Controls.Add(this.UsunOcButton);
+            this.Controls.Add(this.DokZmianButton);
+            this.Controls.Add(this.PokazOcenButton);
+            this.Controls.Add(this.ListaOcenLabel);
+            this.Controls.Add(this.ListaStudLabel);
+            this.Controls.Add(this.ListaOcenListbox);
+            this.Controls.Add(this.ListaStudListbox);
+            this.Controls.Add(this.ZmienOceneHeader);
+            this.Controls.Add(this.WybGrupZatwButton);
+            this.Controls.Add(this.WybGrupCombobox);
+            this.Controls.Add(this.WybGrupLabel);
             this.Name = "ZmienOceny";
             this.Text = "Dziekanat";
             this.Load += new System.EventHandler(this.ZmienOceny_Load);
@@ -233,19 +233,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label ZmienOceneHeader;
+        private System.Windows.Forms.Button WybGrupZatwButton;
+        private System.Windows.Forms.ComboBox WybGrupCombobox;
+        private System.Windows.Forms.Label WybGrupLabel;
+        private System.Windows.Forms.Button PokazOcenButton;
+        private System.Windows.Forms.Label ListaOcenLabel;
+        private System.Windows.Forms.Label ListaStudLabel;
+        private System.Windows.Forms.ListBox ListaOcenListbox;
+        private System.Windows.Forms.ListBox ListaStudListbox;
+        private System.Windows.Forms.Button DokZmianButton;
+        private System.Windows.Forms.Button UsunOcButton;
+        private System.Windows.Forms.ComboBox ZmienOcenCombobox;
+        private System.Windows.Forms.Label ZmienOcenLabel;
+        private System.Windows.Forms.Button PowrotButton;
     }
 }
