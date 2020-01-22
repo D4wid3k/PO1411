@@ -18,6 +18,7 @@ namespace ClassLibrary3.DataAccess
         //get
         List<WniosekModel> PobierzWnioski();
         PersonModel PersonGetByEmail(PersonModel model);
+        List<GrupaModel> ZaladujWszystkieGrupy();
 
 
         //update

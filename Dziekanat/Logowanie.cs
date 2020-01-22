@@ -40,6 +40,7 @@ namespace Dziekanat
         {
             Read();
             p = GlobalConfig.Connections.PersonGetByEmail(p);
+
             if (p == null)
             {
                 MessageBox.Show("Wrong e-mail address please try again");
