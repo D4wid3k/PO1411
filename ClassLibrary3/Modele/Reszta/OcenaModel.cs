@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class OcenaModel
+    public class OcenaModel
     {
 
         /// <summary>

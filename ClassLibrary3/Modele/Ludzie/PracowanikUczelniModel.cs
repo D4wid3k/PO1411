@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Ludzie
 {
-    class PracowanikUczelniModel : PersonModel
+    public class PracowanikUczelniModel : PersonModel
     {
         /// <summary>
         ///  List of subjects that one is teaching   

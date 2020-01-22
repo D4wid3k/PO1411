@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Ludzie
 {
-    class PracownikDziekanatuModel : PracowanikUczelniModel
+    public class PracownikDziekanatuModel : PracowanikUczelniModel
     {
         /// <summary>
         /// List of application's that one's has recived 

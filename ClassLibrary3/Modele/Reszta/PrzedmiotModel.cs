@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class PrzedmiotModel
+    public class PrzedmiotModel
     {
 
         /// <summary>

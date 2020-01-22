@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class WniosekModel
+    public class WniosekModel
     {
         /// <summary>
         /// unique identifier for a given application 
@@ -16,7 +16,7 @@ namespace ClassLibrary3.Modele.Reszta
         /// <summary>
         /// path to a txt/pdf file 
         /// </summary>
-        public string path { get; set; }
+        public string zawartosc { get; set; }
 
     }
 }

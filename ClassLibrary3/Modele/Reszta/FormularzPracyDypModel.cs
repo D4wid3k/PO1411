@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class FormularzPracyDypModel
+    public class FormularzPracyDypModel
     {
         /// <summary>
         /// unique identifier for a given form 

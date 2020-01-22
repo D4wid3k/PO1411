@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class GrupaModel
+    public class GrupaModel
     {
         /// <summary>
         /// unique identifier for a given class

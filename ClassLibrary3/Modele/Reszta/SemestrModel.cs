@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class SemestrModel
+    public class SemestrModel
     {
         /// <summary>
         /// unique identifier for a given Semester

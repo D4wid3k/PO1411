@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Ludzie
 {
-    class StudentModel : PersonModel
+    public class StudentModel : PersonModel
     {
         /// <summary>
         /// Person local ID (in calss) {int} -- names ordered by alphabet 

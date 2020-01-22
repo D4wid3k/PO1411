@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Ludzie
 {
-    class PersonModel
+    public class PersonModel
     {
         /// <summary>
         /// unique identifier for a given person

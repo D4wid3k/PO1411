@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class KierunekModel
+    public class KierunekModel
     {
         /// <summary>
         /// unique identifier for a given FoS

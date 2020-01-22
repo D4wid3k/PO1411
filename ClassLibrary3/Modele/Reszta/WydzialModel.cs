@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Modele.Reszta
 {
-    class WydzialModel
+    public class WydzialModel
     {
         /// <summary>
         /// unique identifier for a given faculty
