@@ -23,5 +23,7 @@ namespace ClassLibrary3.DataAccess
 
         //update
 
+        void DodajKierunek(KierunekModel kierunek);
+        void DodajKandydata(KandydatModel kandydat);
     }
 }

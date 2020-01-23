@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary3;
 using ClassLibrary3.Modele.Ludzie;
 
 namespace Dziekanat
@@ -24,14 +25,16 @@ namespace Dziekanat
                 KandydatModel user = new KandydatModel();
                 user.Imie = ImieTextbox.Text;
                 user.Nazwisko = NazwiskoTextbox.Text;
-                user.Email = EmailTextbox.Text;
+                user.EmailAddress = EmailTextbox.Text;
                 user.UserType = 0;
                 user.PESEL = PeselTextbox.Text;
                 user.Haslo = HasloTextbox.Text;
                 user.WynikRekrutacyjny = zmien_string_na_int(PunktyRekrTextbox.Text);
                 //GlobalConfig.Connections.StworzUzytkownik(user);
                 //GlobalConfig.Connections.Wstaw_haslo(haslo, GlobalConfig.Connections.Uzyskaj_Id_Wstawianego_Usera(user.PESEL));
-                MessageBox.Show($"imie{user.Imie} nazwisko{user.Nazwisko} email{user.Email} usertyp{user.UserType} pesel{user.PESEL} hasl{user.Haslo} wynik{user.WynikRekrutacyjny}");
+                //MessageBox.Show($"imie{user.Imie} nazwisko{user.Nazwisko} email{user.EmailAddress} usertyp{user.UserType} pesel{user.PESEL} hasl{user.Haslo} wynik{user.WynikRekrutacyjny}");
+
+                GlobalConfig.Connections.DodajKandydata(user);
 
                 ImieTextbox.Text = "";
                 NazwiskoTextbox.Text = "";
