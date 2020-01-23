@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DodajStudentaDoKierunku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajStudentaDoKierunku.Designer.cs">
+      <DependentUpon>DodajStudentaDoKierunku.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kierunki.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="ZmienOceny.Designer.cs">
       <DependentUpon>ZmienOceny.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DodajStudentaDoKierunku.resx">
+      <DependentUpon>DodajStudentaDoKierunku.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kierunki.resx">
       <DependentUpon>Kierunki.cs</DependentUpon>
     </EmbeddedResource>
