@@ -83,6 +83,7 @@
             this.StworzKierButton.TabIndex = 14;
             this.StworzKierButton.Text = "Stworz kierunek";
             this.StworzKierButton.UseVisualStyleBackColor = false;
+            this.StworzKierButton.Click += new System.EventHandler(this.StworzKierButton_Click);
             // 
             // UsunKierButton
             // 

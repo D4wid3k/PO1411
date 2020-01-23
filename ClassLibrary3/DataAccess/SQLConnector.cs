@@ -39,7 +39,7 @@ namespace ClassLibrary3.DataAccess
             {
                 var p = new DynamicParameters();
                 p.Add("@Nazwa_kierunku", kierunek.Nazwa);
-                p.Add("@Rok_rozpoczecia", kierunek.RokRozpoczecia);
+                p.Add("@Rok_rozpoczecia", kierunek.rok_rozpoczecia);
 
                 connection.Execute("dbo.spDodajKierunek", p, commandType: CommandType.StoredProcedure);
             }
@@ -117,15 +117,6 @@ namespace ClassLibrary3.DataAccess
 
         //update
 
-
-
-
-
-
-    }
-
-
-
         public void PrzypisanieFormularza(int ID_User, int ID_Wniosku)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
@@ -136,6 +127,20 @@ namespace ClassLibrary3.DataAccess
 
                 connection.Execute("dbo.spDodajPrzypisanieForm", p, commandType: CommandType.StoredProcedure);
             }
+        }
+
+        public List<KierunekModel> ZaładujWszystkieKierunki()
+        {
+            List<KierunekModel> output;
+
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+
+                output = connection.Query<KierunekModel>("dbo.spWysWszystkichKierunkow").ToList();
+
+            }
+
+            return output;
         }
     }
 }

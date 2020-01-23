@@ -19,8 +19,7 @@ namespace ClassLibrary3.DataAccess
         List<WniosekModel> PobierzWnioski();
         PersonModel PersonGetByEmail(PersonModel model);
         List<GrupaModel> ZaladujWszystkieGrupy();
-
-
+        List<KierunekModel> ZaładujWszystkieKierunki();
         //update
 
         void DodajKierunek(KierunekModel kierunek);
