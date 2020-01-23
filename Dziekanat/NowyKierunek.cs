@@ -35,7 +35,7 @@ namespace Dziekanat
             {
                 KierunekModel kierunek = new KierunekModel();
                 kierunek.Nazwa = NazwaKierTextbox.Text;
-                kierunek.RokRozpoczecia = RokRozpTextbox.Text;
+                kierunek.rok_rozpoczecia = RokRozpTextbox.Text;
 
                 GlobalConfig.Connections.DodajKierunek(kierunek);
 
