@@ -34,7 +34,7 @@
             this.StworzKierButton = new System.Windows.Forms.Button();
             this.UsunKierButton = new System.Windows.Forms.Button();
             this.ListaKierLabel = new System.Windows.Forms.Label();
-            this.DodajKierButton = new System.Windows.Forms.Button();
+            this.DodajStudButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KierListbox
@@ -107,17 +107,17 @@
             this.ListaKierLabel.TabIndex = 16;
             this.ListaKierLabel.Text = "Lista kierunkow:";
             // 
-            // DodajKierButton
+            // DodajStudButton
             // 
-            this.DodajKierButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.DodajKierButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.DodajKierButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DodajKierButton.Location = new System.Drawing.Point(193, 341);
-            this.DodajKierButton.Name = "DodajKierButton";
-            this.DodajKierButton.Size = new System.Drawing.Size(164, 62);
-            this.DodajKierButton.TabIndex = 17;
-            this.DodajKierButton.Text = "Dodaj studenta";
-            this.DodajKierButton.UseVisualStyleBackColor = false;
+            this.DodajStudButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.DodajStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.DodajStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.DodajStudButton.Location = new System.Drawing.Point(193, 341);
+            this.DodajStudButton.Name = "DodajStudButton";
+            this.DodajStudButton.Size = new System.Drawing.Size(164, 62);
+            this.DodajStudButton.TabIndex = 17;
+            this.DodajStudButton.Text = "Dodaj studenta";
+            this.DodajStudButton.UseVisualStyleBackColor = false;
             // 
             // Kierunki
             // 
@@ -125,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(552, 545);
-            this.Controls.Add(this.DodajKierButton);
+            this.Controls.Add(this.DodajStudButton);
             this.Controls.Add(this.ListaKierLabel);
             this.Controls.Add(this.UsunKierButton);
             this.Controls.Add(this.StworzKierButton);
@@ -147,6 +147,6 @@
         private System.Windows.Forms.Button StworzKierButton;
         private System.Windows.Forms.Button UsunKierButton;
         private System.Windows.Forms.Label ListaKierLabel;
-        private System.Windows.Forms.Button DodajKierButton;
+        private System.Windows.Forms.Button DodajStudButton;
     }
 }
