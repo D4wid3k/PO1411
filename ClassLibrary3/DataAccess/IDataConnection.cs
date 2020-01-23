@@ -29,15 +29,17 @@ namespace ClassLibrary3.DataAccess
         List<PrzedmiotModel> ZaladujDostepnePrzedmioty(PersonModel model);
         List<PrzedmiotModel> ZaladujPrzedmioty(PersonModel model);
         List<OcenaModel> ZaladujOceny(PersonModel model);
+        void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek);
 
 
         //update
 
-        void DodajKierunek(KierunekModel kierunek);
-        void DodajKandydata(KandydatModel kandydat);
-        WniosekModel DodajWniosek(WniosekModel wniosek);
-        void PrzypisanieFormularza(int ID_User, int ID_Wniosku);
-        void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek);
 
     }
+
+
+    //void DodajKierunek(KierunekModel kierunek);
+    //void DodajKandydata(KandydatModel kandydat);
+    //WniosekModel DodajWniosek(WniosekModel wniosek);
+    //void PrzypisanieFormularza(int ID_User, int ID_Wniosku);
 }
