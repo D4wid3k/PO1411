@@ -31,6 +31,8 @@ namespace ClassLibrary3.DataAccess
             }
         }
 
+
+        //create
         public void DodajKierunek(KierunekModel kierunek)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
@@ -58,7 +60,12 @@ namespace ClassLibrary3.DataAccess
                 return wniosek;
             }
         }
+  
 
+
+
+        //get
+    
         public List<WniosekModel> PobierzWnioski()
         {
             List<WniosekModel> output;
@@ -72,6 +79,52 @@ namespace ClassLibrary3.DataAccess
 
             return output;
         }
+
+        public PersonModel PersonGetByEmail(PersonModel model)
+        {
+            List<PersonModel> temp = new List<PersonModel>();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@email", model.EmailAddress);
+                temp = connection.Query<PersonModel>("dbo.spWysPoMail", p, commandType: CommandType.StoredProcedure).ToList();
+            }
+
+            if (temp.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                foreach (PersonModel P in temp)
+                {
+                    model = P;
+                }
+            }
+
+            return model;
+        }
+
+        public List<GrupaModel> ZaladujWszystkieGrupy()
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+
+
+        //update
+
+
+
+
+
+
+    }
+
+
 
         public void PrzypisanieFormularza(int ID_User, int ID_Wniosku)
         {
