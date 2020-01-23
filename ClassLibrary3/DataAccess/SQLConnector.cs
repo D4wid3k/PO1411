@@ -263,6 +263,18 @@ namespace ClassLibrary3.DataAccess
             return output;
         }
 
+        public void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@IDUcznia", ID_User);
+                p.Add("@IDKierunek", ID_Kierunek);
+
+                connection.Execute("dbo.spDodajUczIKier", p, commandType: CommandType.StoredProcedure);
+            }
+        }
+
       
     }
 }

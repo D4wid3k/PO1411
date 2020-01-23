@@ -39,7 +39,13 @@ namespace Dziekanat
 
         private void StworzKierButton_Click(object sender, EventArgs e)
         {
+            (new NowyKierunek()).Show();
+        }
 
+        private void DodajStudButton_Click(object sender, EventArgs e)
+        {
+            KierunekModel _Kierunek = (KierunekModel)KierListbox.SelectedItem;
+            (new DodajStudentaDoKierunku(_Kierunek)).Show();
         }
     }
 }

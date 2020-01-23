@@ -32,7 +32,6 @@
             this.KierHeader = new System.Windows.Forms.Label();
             this.PowrotKierButton = new System.Windows.Forms.Button();
             this.StworzKierButton = new System.Windows.Forms.Button();
-            this.UsunKierButton = new System.Windows.Forms.Button();
             this.ListaKierLabel = new System.Windows.Forms.Label();
             this.DodajStudButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -79,23 +78,11 @@
             this.StworzKierButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.StworzKierButton.Location = new System.Drawing.Point(38, 341);
             this.StworzKierButton.Name = "StworzKierButton";
-            this.StworzKierButton.Size = new System.Drawing.Size(149, 62);
+            this.StworzKierButton.Size = new System.Drawing.Size(230, 62);
             this.StworzKierButton.TabIndex = 14;
             this.StworzKierButton.Text = "Stworz kierunek";
             this.StworzKierButton.UseVisualStyleBackColor = false;
             this.StworzKierButton.Click += new System.EventHandler(this.StworzKierButton_Click);
-            // 
-            // UsunKierButton
-            // 
-            this.UsunKierButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.UsunKierButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.UsunKierButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.UsunKierButton.Location = new System.Drawing.Point(363, 341);
-            this.UsunKierButton.Name = "UsunKierButton";
-            this.UsunKierButton.Size = new System.Drawing.Size(149, 62);
-            this.UsunKierButton.TabIndex = 15;
-            this.UsunKierButton.Text = "Usun kierunek";
-            this.UsunKierButton.UseVisualStyleBackColor = false;
             // 
             // ListaKierLabel
             // 
@@ -113,12 +100,13 @@
             this.DodajStudButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.DodajStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodajStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DodajStudButton.Location = new System.Drawing.Point(193, 341);
+            this.DodajStudButton.Location = new System.Drawing.Point(282, 341);
             this.DodajStudButton.Name = "DodajStudButton";
-            this.DodajStudButton.Size = new System.Drawing.Size(164, 62);
+            this.DodajStudButton.Size = new System.Drawing.Size(230, 62);
             this.DodajStudButton.TabIndex = 17;
             this.DodajStudButton.Text = "Dodaj studenta";
             this.DodajStudButton.UseVisualStyleBackColor = false;
+            this.DodajStudButton.Click += new System.EventHandler(this.DodajStudButton_Click);
             // 
             // Kierunki
             // 
@@ -128,7 +116,6 @@
             this.ClientSize = new System.Drawing.Size(552, 545);
             this.Controls.Add(this.DodajStudButton);
             this.Controls.Add(this.ListaKierLabel);
-            this.Controls.Add(this.UsunKierButton);
             this.Controls.Add(this.StworzKierButton);
             this.Controls.Add(this.PowrotKierButton);
             this.Controls.Add(this.KierHeader);
@@ -146,7 +133,6 @@
         private System.Windows.Forms.Label KierHeader;
         private System.Windows.Forms.Button PowrotKierButton;
         private System.Windows.Forms.Button StworzKierButton;
-        private System.Windows.Forms.Button UsunKierButton;
         private System.Windows.Forms.Label ListaKierLabel;
         private System.Windows.Forms.Button DodajStudButton;
     }
