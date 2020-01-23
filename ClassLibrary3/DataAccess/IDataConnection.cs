@@ -16,5 +16,7 @@ namespace ClassLibrary3.DataAccess
         List<WniosekModel> PobierzWnioski();
         void DodajKierunek(KierunekModel kierunek);
         void DodajKandydata(KandydatModel kandydat);
+        WniosekModel DodajWniosek(WniosekModel wniosek);
+        void PrzypisanieFormularza(int ID_User, int ID_Wniosku);
     }
 }
