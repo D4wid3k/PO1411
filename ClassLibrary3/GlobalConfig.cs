@@ -29,5 +29,7 @@ namespace ClassLibrary3
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
+
+       
     }
 }

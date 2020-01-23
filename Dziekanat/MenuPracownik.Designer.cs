@@ -41,9 +41,10 @@
             this.ImieLabel.AutoSize = true;
             this.ImieLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
             this.ImieLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ImieLabel.Location = new System.Drawing.Point(266, 48);
+            this.ImieLabel.Location = new System.Drawing.Point(200, 39);
+            this.ImieLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ImieLabel.Name = "ImieLabel";
-            this.ImieLabel.Size = new System.Drawing.Size(86, 45);
+            this.ImieLabel.Size = new System.Drawing.Size(70, 37);
             this.ImieLabel.TabIndex = 3;
             this.ImieLabel.Text = "Imie";
             // 
@@ -52,9 +53,10 @@
             this.WitajLabel.AutoSize = true;
             this.WitajLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
             this.WitajLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.WitajLabel.Location = new System.Drawing.Point(181, 48);
+            this.WitajLabel.Location = new System.Drawing.Point(136, 39);
+            this.WitajLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WitajLabel.Name = "WitajLabel";
-            this.WitajLabel.Size = new System.Drawing.Size(99, 45);
+            this.WitajLabel.Size = new System.Drawing.Size(81, 37);
             this.WitajLabel.TabIndex = 2;
             this.WitajLabel.Text = "Witaj";
             // 
@@ -63,9 +65,10 @@
             this.PlanLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.PlanLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PlanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.PlanLabel.Location = new System.Drawing.Point(193, 295);
+            this.PlanLabel.Location = new System.Drawing.Point(145, 240);
+            this.PlanLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PlanLabel.Name = "PlanLabel";
-            this.PlanLabel.Size = new System.Drawing.Size(149, 62);
+            this.PlanLabel.Size = new System.Drawing.Size(112, 50);
             this.PlanLabel.TabIndex = 7;
             this.PlanLabel.Text = "Plan";
             this.PlanLabel.UseVisualStyleBackColor = false;
@@ -76,9 +79,10 @@
             this.WylogujLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.WylogujLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WylogujLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.WylogujLabel.Location = new System.Drawing.Point(348, 456);
+            this.WylogujLabel.Location = new System.Drawing.Point(261, 370);
+            this.WylogujLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WylogujLabel.Name = "WylogujLabel";
-            this.WylogujLabel.Size = new System.Drawing.Size(149, 62);
+            this.WylogujLabel.Size = new System.Drawing.Size(112, 50);
             this.WylogujLabel.TabIndex = 5;
             this.WylogujLabel.Text = "Wyloguj";
             this.WylogujLabel.UseVisualStyleBackColor = false;
@@ -88,37 +92,41 @@
             this.DodajOcLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.DodajOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodajOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DodajOcLabel.Location = new System.Drawing.Point(193, 159);
+            this.DodajOcLabel.Location = new System.Drawing.Point(145, 129);
+            this.DodajOcLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DodajOcLabel.Name = "DodajOcLabel";
-            this.DodajOcLabel.Size = new System.Drawing.Size(149, 62);
+            this.DodajOcLabel.Size = new System.Drawing.Size(112, 50);
             this.DodajOcLabel.TabIndex = 6;
             this.DodajOcLabel.Text = "Dodaj oceny";
             this.DodajOcLabel.UseVisualStyleBackColor = false;
+            this.DodajOcLabel.Click += new System.EventHandler(this.DodajOcLabel_Click);
             // 
             // ZmienOcLabel
             // 
             this.ZmienOcLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ZmienOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.ZmienOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ZmienOcLabel.Location = new System.Drawing.Point(193, 227);
+            this.ZmienOcLabel.Location = new System.Drawing.Point(145, 184);
+            this.ZmienOcLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ZmienOcLabel.Name = "ZmienOcLabel";
-            this.ZmienOcLabel.Size = new System.Drawing.Size(149, 62);
+            this.ZmienOcLabel.Size = new System.Drawing.Size(112, 50);
             this.ZmienOcLabel.TabIndex = 8;
             this.ZmienOcLabel.Text = "Zmien oceny";
             this.ZmienOcLabel.UseVisualStyleBackColor = false;
             // 
             // MenuPracownik
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(509, 530);
+            this.ClientSize = new System.Drawing.Size(382, 431);
             this.Controls.Add(this.ZmienOcLabel);
             this.Controls.Add(this.PlanLabel);
             this.Controls.Add(this.DodajOcLabel);
             this.Controls.Add(this.ImieLabel);
             this.Controls.Add(this.WylogujLabel);
             this.Controls.Add(this.WitajLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuPracownik";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

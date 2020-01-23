@@ -13,6 +13,9 @@ namespace ClassLibrary3.DataAccess
 {
     class SQLConnector : IDataConnection
     {
+
+
+        //create
         public void DodajKandydata(KandydatModel kandydat)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
@@ -31,8 +34,6 @@ namespace ClassLibrary3.DataAccess
             }
         }
 
-
-        //create
         public void DodajKierunek(KierunekModel kierunek)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
@@ -107,7 +108,39 @@ namespace ClassLibrary3.DataAccess
 
         public List<GrupaModel> ZaladujWszystkieGrupy()
         {
-            throw new NotImplementedException();
+            List<GrupaModel> output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                output = connection.Query<GrupaModel>("dbo.spWysIDiNazwaGrup").ToList();
+
+                foreach (GrupaModel G in output) //Get members by class id 
+                {
+                    var p = new DynamicParameters();
+                    p.Add("@IDgr", G.Id);
+                    G.Czlonkowie = connection.Query<PersonModel>("dbo.spWysWszysStudent", p, commandType: CommandType.StoredProcedure).ToList();
+                }
+            }
+            return output;
+        }
+
+        public List<PrzedmiotModel> ZaladujDostepnePrzedmioty(PersonModel model)
+        {
+            List<PrzedmiotModel> Dostep = new List<PrzedmiotModel>();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@ID", model.Id);
+                Dostep = connection.Query<PrzedmiotModel>("dbo.spWysNauPrzPoMail", p, commandType: CommandType.StoredProcedure).ToList();
+            }
+
+            if (Dostep.Count == 0)
+            {
+                return null;
+            }
+          
+
+
+            return Dostep;
         }
 
 

@@ -100,7 +100,7 @@
             this.DodajStudButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.DodajStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodajStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DodajStudButton.Location = new System.Drawing.Point(282, 341);
+            this.DodajStudButton.Location = new System.Drawing.Point(348, 341);
             this.DodajStudButton.Name = "DodajStudButton";
             this.DodajStudButton.Size = new System.Drawing.Size(230, 62);
             this.DodajStudButton.TabIndex = 17;

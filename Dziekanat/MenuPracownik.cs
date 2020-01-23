@@ -16,8 +16,19 @@ namespace Dziekanat
         public PersonModel p { get; set; }
         public MenuPracownik(PersonModel model)
         {
+            p = model;
             InitializeComponent();
         }
+
+      
+
+        private void DodajOcLabel_Click(object sender, EventArgs e)
+        {
+
+            WstawOceny wo = new WstawOceny(p);
+            wo.Show();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
