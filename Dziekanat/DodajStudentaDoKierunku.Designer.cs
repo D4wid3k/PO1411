@@ -89,6 +89,7 @@
             this.DodajStudButton.TabIndex = 20;
             this.DodajStudButton.Text = "Dodaj";
             this.DodajStudButton.UseVisualStyleBackColor = false;
+            this.DodajStudButton.Click += new System.EventHandler(this.DodajStudButton_Click);
             // 
             // DodajStudentaDoKierunku
             // 
