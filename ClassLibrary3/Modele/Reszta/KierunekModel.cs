@@ -21,11 +21,19 @@ namespace ClassLibrary3.Modele.Reszta
         /// <summary>
         /// represents start date  
         /// </summary>
-        public string RokRozpoczecia { get; set; }
+        public string rok_rozpoczecia { get; set; }
 
         /// <summary>
         /// List that contains class members
         /// </summary>
         public List<SemestrModel> Czlonkowie { get; set; } = new List<SemestrModel>();
+
+        public string FullName
+        {
+            get
+            {
+                return $"{Nazwa} {rok_rozpoczecia}";
+            }
+        }
     }
 }

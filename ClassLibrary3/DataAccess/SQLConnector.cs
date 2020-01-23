@@ -40,10 +40,25 @@ namespace ClassLibrary3.DataAccess
             {
                 var p = new DynamicParameters();
                 p.Add("@Nazwa_kierunku", kierunek.Nazwa);
-                p.Add("@Rok_rozpoczecia", kierunek.RokRozpoczecia);
+                p.Add("@Rok_rozpoczecia", kierunek.rok_rozpoczecia);
 
                 connection.Execute("dbo.spDodajKierunek", p, commandType: CommandType.StoredProcedure);
+            }
+        }
 
+        public WniosekModel DodajWniosek(WniosekModel wniosek)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@Zawartosc", wniosek.zawartosc);
+                p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spDodajFormularz", p, commandType: CommandType.StoredProcedure);
+
+                wniosek.Id = p.Get<int>("@id");
+
+                return wniosek;
             }
         }
   
@@ -135,12 +150,30 @@ namespace ClassLibrary3.DataAccess
 
         //update
 
+        public void PrzypisanieFormularza(int ID_User, int ID_Wniosku)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@IDStud", ID_User);
+                p.Add("@IDform", ID_Wniosku);
 
+                connection.Execute("dbo.spDodajPrzypisanieForm", p, commandType: CommandType.StoredProcedure);
+            }
+        }
 
+        public List<KierunekModel> ZaładujWszystkieKierunki()
+        {
+            List<KierunekModel> output;
 
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
 
+                output = connection.Query<KierunekModel>("dbo.spWysWszystkichKierunkow").ToList();
 
+            }
+
+            return output;
+        }
     }
-
-
 }

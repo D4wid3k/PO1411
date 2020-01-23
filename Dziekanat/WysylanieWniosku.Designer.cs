@@ -90,6 +90,7 @@
             this.Wyslij.TabIndex = 16;
             this.Wyslij.Text = "Wyslij";
             this.Wyslij.UseVisualStyleBackColor = false;
+            this.Wyslij.Click += new System.EventHandler(this.Wyslij_Click);
             // 
             // WysylanieWniosku
             // 
