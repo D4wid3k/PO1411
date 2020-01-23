@@ -58,6 +58,8 @@
     <Compile Include="Modele\Reszta\GrupaModel.cs" />
     <Compile Include="Modele\Reszta\KierunekModel.cs" />
     <Compile Include="Modele\Reszta\OcenaModel.cs" />
+    <Compile Include="Modele\Reszta\PosiadaczOceny.cs" />
+    <Compile Include="Modele\Reszta\PosiadaczPrzedmiotu.cs" />
     <Compile Include="Modele\Reszta\PrzedmiotModel.cs" />
     <Compile Include="Modele\Reszta\SemestrModel.cs" />
     <Compile Include="Modele\Reszta\WniosekModel.cs" />

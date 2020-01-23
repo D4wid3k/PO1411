@@ -32,7 +32,8 @@ namespace Dziekanat
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Plan pl = new Plan(p);
+            pl.Show();
         }
     }
 }

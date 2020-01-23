@@ -53,17 +53,17 @@ namespace Dziekanat
                 }
                 else
                 {
-                    if (p.UserType == 0)
+                    if (p.UserType == 1)
                     {
                         MenuStudent ms = new MenuStudent(p);
                         ms.Show();
                     }
-                    else if (p.UserType == 1)
+                    else if (p.UserType == 2)
                     {
                         MenuPracownik mp = new MenuPracownik(p);
                         mp.Show();
                     }
-                    else if (p.UserType == 2)
+                    else if (p.UserType == 3)
                     {
                         MenuDziekan md = new MenuDziekan(p);
                         md.Show();

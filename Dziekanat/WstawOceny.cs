@@ -21,10 +21,18 @@ namespace Dziekanat
         List<PrzedmiotModel> Dostep = new List<PrzedmiotModel>();
 
         List<GrupaModel> Grupy = GlobalConfig.Connections.ZaladujWszystkieGrupy();
-        List<PersonModel> Czlonkowie = new List<PersonModel>();
-        List<PersonModel> Wybrani = new List<PersonModel>();
+     
+      
         List<string> Przedmioty = new List<string>();
         List<double> oceny = new List<double>();
+        GrupaModel G { get; set; }
+
+        List<StudentModel> Wybrani = new List<StudentModel>();
+        List<StudentModel> Czlonkowie = new List<StudentModel>();
+
+
+       
+
 
         public WstawOceny(PersonModel model)
         {
@@ -84,15 +92,83 @@ namespace Dziekanat
 
         }
 
+        private void WybGruZatwButton_Click(object sender, EventArgs e)
+        {
+            Czlonkowie = new List<StudentModel>();
+            GrupaModel G = null;
+            
+            G = (GrupaModel)WybGruCombobox.SelectedItem;
+            Czlonkowie = GlobalConfig.Connections.ZaladujCzlonkowGrupy(G);
+
+            ListaStudListbox.DataSource = Czlonkowie;
+            ListaStudListbox.DisplayMember = "Full_Name_plus_Id";
+        }
+
+        private void DodStudButton_Click(object sender, EventArgs e)
+        {
+            WypStudListbox.DisplayMember = null;
+            StudentModel s = (StudentModel)ListaStudListbox.SelectedItem;
+            Wybrani.Add(s);
+            WypStudListbox.DataSource = Wybrani;
+            WypStudListbox.DisplayMember = "Full_Name_plus_Id";
+        }
+
+        private void UsunStudButton_Click(object sender, EventArgs e)
+        {
+            WypStudListbox.DisplayMember = null;
+            StudentModel s = (StudentModel)WypStudListbox.SelectedItem;
+
+            if(s!=null)
+            {
+                Wybrani.Remove(s);
+                WypStudListbox.DataSource = Wybrani;
+                WypStudListbox.DisplayMember = "Full_Name_plus_Id";
+            }
+
+        }
+
+        private void DodOcenButton_Click(object sender, EventArgs e)
+        {
+            if (Wybrani.Count != 0)
+            {
+                OcenaModel O = new OcenaModel();
+                O.Przedmiot = (string)PrzedmiotCombobox.SelectedItem;
+                O.Wartosc = (double)OcenaCombobox.SelectedItem;
+                O.Prowadzacy = p.Full_Name;
+                O.data = DateTime.Today;
+
+                O = GlobalConfig.Connections.StworzOcene(O);
+
+                foreach (StudentModel S in Wybrani)
+                {
+                    PosiadaczOceny PO = new PosiadaczOceny();
+                    PO.OsobaId = S.Id;
+                    PO.OcenaId = O.Id;
+
+                    GlobalConfig.Connections.StworzPosiadaczaOceny(PO);
+                }
+
+               
+
+                MessageBox.Show("Oceny zostały dodane pomyslnie");
+
+                //cleaning 
+                Wybrani = new List<StudentModel>();
+                WypStudListbox.DisplayMember = null;
+                WypStudListbox.DataSource = Wybrani;
+                WypStudListbox.DisplayMember = "FullName_plus_Id";
+            }
+            else
+            {
+                MessageBox.Show("Musisz wybrac przynajmniej jednego ucznia");
+            }
+        }
 
 
-
-
-
-
-
-
-
+        private void PowrotButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
 
 
@@ -106,5 +182,7 @@ namespace Dziekanat
         {
 
         }
+
+       
     }
 }

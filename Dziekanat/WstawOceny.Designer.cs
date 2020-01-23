@@ -66,7 +66,7 @@
             this.ListaStudListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ListaStudListbox.FormattingEnabled = true;
             this.ListaStudListbox.Location = new System.Drawing.Point(182, 114);
-            this.ListaStudListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListaStudListbox.Margin = new System.Windows.Forms.Padding(2);
             this.ListaStudListbox.Name = "ListaStudListbox";
             this.ListaStudListbox.Size = new System.Drawing.Size(145, 288);
             this.ListaStudListbox.TabIndex = 4;
@@ -78,7 +78,7 @@
             this.WypStudListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.WypStudListbox.FormattingEnabled = true;
             this.WypStudListbox.Location = new System.Drawing.Point(342, 114);
-            this.WypStudListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WypStudListbox.Margin = new System.Windows.Forms.Padding(2);
             this.WypStudListbox.Name = "WypStudListbox";
             this.WypStudListbox.Size = new System.Drawing.Size(151, 288);
             this.WypStudListbox.TabIndex = 5;
@@ -113,12 +113,13 @@
             this.PowrotButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PowrotButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.PowrotButton.Location = new System.Drawing.Point(25, 423);
-            this.PowrotButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PowrotButton.Margin = new System.Windows.Forms.Padding(2);
             this.PowrotButton.Name = "PowrotButton";
             this.PowrotButton.Size = new System.Drawing.Size(125, 50);
             this.PowrotButton.TabIndex = 8;
             this.PowrotButton.Text = "Powrot";
             this.PowrotButton.UseVisualStyleBackColor = false;
+            this.PowrotButton.Click += new System.EventHandler(this.PowrotButton_Click);
             // 
             // DodStudButton
             // 
@@ -126,12 +127,13 @@
             this.DodStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.DodStudButton.Location = new System.Drawing.Point(192, 423);
-            this.DodStudButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DodStudButton.Margin = new System.Windows.Forms.Padding(2);
             this.DodStudButton.Name = "DodStudButton";
             this.DodStudButton.Size = new System.Drawing.Size(125, 50);
             this.DodStudButton.TabIndex = 9;
             this.DodStudButton.Text = "Dodaj studenta";
             this.DodStudButton.UseVisualStyleBackColor = false;
+            this.DodStudButton.Click += new System.EventHandler(this.DodStudButton_Click);
             // 
             // UsunStudButton
             // 
@@ -139,19 +141,20 @@
             this.UsunStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.UsunStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.UsunStudButton.Location = new System.Drawing.Point(356, 423);
-            this.UsunStudButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsunStudButton.Margin = new System.Windows.Forms.Padding(2);
             this.UsunStudButton.Name = "UsunStudButton";
             this.UsunStudButton.Size = new System.Drawing.Size(125, 50);
             this.UsunStudButton.TabIndex = 10;
             this.UsunStudButton.Text = "Usun studenta";
             this.UsunStudButton.UseVisualStyleBackColor = false;
+            this.UsunStudButton.Click += new System.EventHandler(this.UsunStudButton_Click);
             // 
             // PrzedmiotCombobox
             // 
             this.PrzedmiotCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.PrzedmiotCombobox.FormattingEnabled = true;
             this.PrzedmiotCombobox.Location = new System.Drawing.Point(529, 159);
-            this.PrzedmiotCombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PrzedmiotCombobox.Margin = new System.Windows.Forms.Padding(2);
             this.PrzedmiotCombobox.Name = "PrzedmiotCombobox";
             this.PrzedmiotCombobox.Size = new System.Drawing.Size(126, 27);
             this.PrzedmiotCombobox.TabIndex = 11;
@@ -161,7 +164,7 @@
             this.OcenaCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.OcenaCombobox.FormattingEnabled = true;
             this.OcenaCombobox.Location = new System.Drawing.Point(529, 214);
-            this.OcenaCombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OcenaCombobox.Margin = new System.Windows.Forms.Padding(2);
             this.OcenaCombobox.Name = "OcenaCombobox";
             this.OcenaCombobox.Size = new System.Drawing.Size(126, 27);
             this.OcenaCombobox.TabIndex = 12;
@@ -196,12 +199,13 @@
             this.DodOcenButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodOcenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.DodOcenButton.Location = new System.Drawing.Point(529, 267);
-            this.DodOcenButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DodOcenButton.Margin = new System.Windows.Forms.Padding(2);
             this.DodOcenButton.Name = "DodOcenButton";
             this.DodOcenButton.Size = new System.Drawing.Size(125, 50);
             this.DodOcenButton.TabIndex = 15;
             this.DodOcenButton.Text = "Dodaj ocene";
             this.DodOcenButton.UseVisualStyleBackColor = false;
+            this.DodOcenButton.Click += new System.EventHandler(this.DodOcenButton_Click);
             // 
             // WybGruLabel
             // 
@@ -220,7 +224,7 @@
             this.WybGruCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.WybGruCombobox.FormattingEnabled = true;
             this.WybGruCombobox.Location = new System.Drawing.Point(25, 159);
-            this.WybGruCombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WybGruCombobox.Margin = new System.Windows.Forms.Padding(2);
             this.WybGruCombobox.Name = "WybGruCombobox";
             this.WybGruCombobox.Size = new System.Drawing.Size(126, 27);
             this.WybGruCombobox.TabIndex = 1;
@@ -231,12 +235,13 @@
             this.WybGruZatwButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WybGruZatwButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.WybGruZatwButton.Location = new System.Drawing.Point(25, 202);
-            this.WybGruZatwButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WybGruZatwButton.Margin = new System.Windows.Forms.Padding(2);
             this.WybGruZatwButton.Name = "WybGruZatwButton";
             this.WybGruZatwButton.Size = new System.Drawing.Size(125, 50);
             this.WybGruZatwButton.TabIndex = 3;
             this.WybGruZatwButton.Text = "Zatwierdz";
             this.WybGruZatwButton.UseVisualStyleBackColor = false;
+            this.WybGruZatwButton.Click += new System.EventHandler(this.WybGruZatwButton_Click);
             // 
             // WstawOceny
             // 
@@ -260,7 +265,7 @@
             this.Controls.Add(this.WybGruLabel);
             this.Controls.Add(this.WybGruCombobox);
             this.Controls.Add(this.DodajOcHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WstawOceny";
             this.Text = "Dziekanat";
             this.Load += new System.EventHandler(this.WstawOceny_Load);

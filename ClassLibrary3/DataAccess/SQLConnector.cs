@@ -61,12 +61,50 @@ namespace ClassLibrary3.DataAccess
                 return wniosek;
             }
         }
-  
 
+        public OcenaModel StworzOcene(OcenaModel model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@Wartosc", model.Wartosc);
+                p.Add("@Przedmiot", model.Przedmiot);
+                p.Add("@Prowadzacy", model.Prowadzacy);
+                p.Add("@Data", model.data);
+
+
+                p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spDodajOcene", p, commandType: CommandType.StoredProcedure);
+
+                model.Id = p.Get<int>("@id");
+
+                return model;
+            }
+        }
+
+        public PosiadaczOceny StworzPosiadaczaOceny(PosiadaczOceny model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@OsobaId", model.OsobaId);
+                p.Add("@OcenaId", model.OcenaId);
+
+
+                p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spDodajPosiadaczOceny", p, commandType: CommandType.StoredProcedure);
+
+                model.Id = p.Get<int>("@id");
+
+                return model;
+            }
+        }
 
 
         //get
-    
+
         public List<WniosekModel> PobierzWnioski()
         {
             List<WniosekModel> output;
@@ -130,22 +168,71 @@ namespace ClassLibrary3.DataAccess
             {
                 var p = new DynamicParameters();
                 p.Add("@ID", model.Id);
-                Dostep = connection.Query<PrzedmiotModel>("dbo.spWysNauPrzPoMail", p, commandType: CommandType.StoredProcedure).ToList();
+                Dostep = connection.Query<PrzedmiotModel>("dbo.spWysDostepnePrzedmiotyPoID", p, commandType: CommandType.StoredProcedure).ToList();
             }
 
             if (Dostep.Count == 0)
             {
                 return null;
             }
-          
+
 
 
             return Dostep;
         }
 
+        public List<PrzedmiotModel> ZaladujPrzedmioty(PersonModel model)
+        {
+            List<PrzedmiotModel> Dostep = new List<PrzedmiotModel>();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@ID", model.Id);
+                Dostep = connection.Query<PrzedmiotModel>("dbo.spWysPrzPoMail", p, commandType: CommandType.StoredProcedure).ToList();
+            }
+
+            if (Dostep.Count == 0)
+            {
+                return null;
+            }
 
 
 
+            return Dostep;
+        }
+        
+        public List<StudentModel> ZaladujCzlonkowGrupy(GrupaModel model)
+        {
+            List<StudentModel> temp = new List<StudentModel>();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@ID", model.Id);
+                temp = connection.Query<StudentModel>("dbo.spWysOsobyPoIDGrupy", p, commandType: CommandType.StoredProcedure).ToList();
+            }
+            
+            return temp;
+        }
+
+        public List<OcenaModel> ZaladujOceny(PersonModel model)
+        {
+            List<OcenaModel> Oceny = new List<OcenaModel>();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@IDst", model.Id);
+                Oceny = connection.Query<OcenaModel>("dbo.spWysOcenyPoID", p, commandType: CommandType.StoredProcedure).ToList();
+            }
+
+            if (Oceny.Count == 0)
+            {
+                return null;
+            }
+
+
+
+            return Oceny;
+        }
 
 
         //update
@@ -175,5 +262,7 @@ namespace ClassLibrary3.DataAccess
 
             return output;
         }
+
+      
     }
 }

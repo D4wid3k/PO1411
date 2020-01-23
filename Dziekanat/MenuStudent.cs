@@ -17,7 +17,20 @@ namespace Dziekanat
 
         public MenuStudent(PersonModel model)
         {
+            p = model;
             InitializeComponent();
+        }
+
+        private void PlanLabel_Click(object sender, EventArgs e)
+        {
+            Plan pl = new Plan(p);
+            pl.Show();
+        }
+
+        private void OcenyLabel_Click(object sender, EventArgs e)
+        {
+            Oceny oc = new Oceny(p);
+            oc.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,5 +42,7 @@ namespace Dziekanat
         {
 
         }
+
+       
     }
 }

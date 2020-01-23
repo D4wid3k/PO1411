@@ -13,21 +13,26 @@ namespace ClassLibrary3.DataAccess
     public interface IDataConnection
     {
         //create
-
+        OcenaModel StworzOcene(OcenaModel model);
+        PosiadaczOceny StworzPosiadaczaOceny(PosiadaczOceny model);
+        void DodajKierunek(KierunekModel kierunek);
+        void DodajKandydata(KandydatModel kandydat);
+        WniosekModel DodajWniosek(WniosekModel wniosek);
+        void PrzypisanieFormularza(int ID_User, int ID_Wniosku);
 
         //get
         List<WniosekModel> PobierzWnioski();
         PersonModel PersonGetByEmail(PersonModel model);
         List<GrupaModel> ZaladujWszystkieGrupy();
         List<KierunekModel> ZaładujWszystkieKierunki();
+        List<StudentModel> ZaladujCzlonkowGrupy(GrupaModel model);
         List<PrzedmiotModel> ZaladujDostepnePrzedmioty(PersonModel model);
+        List<PrzedmiotModel> ZaladujPrzedmioty(PersonModel model);
+        List<OcenaModel> ZaladujOceny(PersonModel model);
 
 
         //update
 
-        void DodajKierunek(KierunekModel kierunek);
-        void DodajKandydata(KandydatModel kandydat);
-        WniosekModel DodajWniosek(WniosekModel wniosek);
-        void PrzypisanieFormularza(int ID_User, int ID_Wniosku);
+
     }
 }
