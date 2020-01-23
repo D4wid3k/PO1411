@@ -18,7 +18,7 @@ namespace Dziekanat
         
         public PersonModel p { get; set; }
         public PracowanikUczelniModel u { get; set; }
-        List<PrzedmiotModel> Dostep = new List<string>();
+        List<PrzedmiotModel> Dostep = new List<PrzedmiotModel>();
 
         List<GrupaModel> Grupy = GlobalConfig.Connections.ZaladujWszystkieGrupy();
         List<PersonModel> Czlonkowie = new List<PersonModel>();
