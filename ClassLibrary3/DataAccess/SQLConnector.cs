@@ -32,19 +32,7 @@ namespace ClassLibrary3.DataAccess
 
 
         //get
-        public void DodajKierunek(KierunekModel kierunek)
-        {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
-            {
-                var p = new DynamicParameters();
-                p.Add("@Nazwa_kierunku", kierunek.Nazwa);
-                p.Add("@Rok_rozpoczecia", kierunek.RokRozpoczecia);
-
-                connection.Execute("dbo.spDodajKierunek", p, commandType: CommandType.StoredProcedure);
-
-            }
-        }
-
+    
         public List<WniosekModel> PobierzWnioski()
         {
             List<WniosekModel> output;
