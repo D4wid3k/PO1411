@@ -33,7 +33,7 @@ namespace ClassLibrary3.DataAccess
 
 
         //update
-
+        void ZmienOcene(OcenaModel model);
 
     }
 

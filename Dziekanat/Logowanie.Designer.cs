@@ -43,9 +43,10 @@
             this.ZalogujButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ZalogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ZalogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ZalogujButton.Location = new System.Drawing.Point(276, 247);
+            this.ZalogujButton.Location = new System.Drawing.Point(207, 201);
+            this.ZalogujButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ZalogujButton.Name = "ZalogujButton";
-            this.ZalogujButton.Size = new System.Drawing.Size(155, 67);
+            this.ZalogujButton.Size = new System.Drawing.Size(116, 54);
             this.ZalogujButton.TabIndex = 0;
             this.ZalogujButton.Text = "Zaloguj";
             this.ZalogujButton.UseVisualStyleBackColor = false;
@@ -56,35 +57,39 @@
             this.LogHeader.AutoSize = true;
             this.LogHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LogHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.LogHeader.Location = new System.Drawing.Point(258, 28);
+            this.LogHeader.Location = new System.Drawing.Point(194, 23);
+            this.LogHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogHeader.Name = "LogHeader";
-            this.LogHeader.Size = new System.Drawing.Size(184, 45);
+            this.LogHeader.Size = new System.Drawing.Size(149, 37);
             this.LogHeader.TabIndex = 1;
             this.LogHeader.Text = "Logowanie";
             // 
             // LoginTextbox
             // 
             this.LoginTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LoginTextbox.Location = new System.Drawing.Point(221, 139);
+            this.LoginTextbox.Location = new System.Drawing.Point(166, 113);
+            this.LoginTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LoginTextbox.Name = "LoginTextbox";
-            this.LoginTextbox.Size = new System.Drawing.Size(263, 30);
+            this.LoginTextbox.Size = new System.Drawing.Size(198, 26);
             this.LoginTextbox.TabIndex = 2;
             // 
             // HasloTextbox
             // 
             this.HasloTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.HasloTextbox.Location = new System.Drawing.Point(221, 197);
+            this.HasloTextbox.Location = new System.Drawing.Point(166, 160);
+            this.HasloTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HasloTextbox.Name = "HasloTextbox";
-            this.HasloTextbox.Size = new System.Drawing.Size(263, 30);
+            this.HasloTextbox.Size = new System.Drawing.Size(198, 26);
             this.HasloTextbox.TabIndex = 3;
             // 
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.LoginLabel.Location = new System.Drawing.Point(218, 119);
+            this.LoginLabel.Location = new System.Drawing.Point(164, 97);
+            this.LoginLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(47, 17);
+            this.LoginLabel.Size = new System.Drawing.Size(36, 13);
             this.LoginLabel.TabIndex = 4;
             this.LoginLabel.Text = "Login:";
             // 
@@ -92,9 +97,10 @@
             // 
             this.HasloLabel.AutoSize = true;
             this.HasloLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.HasloLabel.Location = new System.Drawing.Point(218, 177);
+            this.HasloLabel.Location = new System.Drawing.Point(164, 144);
+            this.HasloLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HasloLabel.Name = "HasloLabel";
-            this.HasloLabel.Size = new System.Drawing.Size(48, 17);
+            this.HasloLabel.Size = new System.Drawing.Size(37, 13);
             this.HasloLabel.TabIndex = 5;
             this.HasloLabel.Text = "Haslo:";
             // 
@@ -103,29 +109,32 @@
             this.RejestracjaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.RejestracjaButton.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.RejestracjaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.RejestracjaButton.Location = new System.Drawing.Point(276, 405);
+            this.RejestracjaButton.Location = new System.Drawing.Point(207, 329);
+            this.RejestracjaButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RejestracjaButton.Name = "RejestracjaButton";
-            this.RejestracjaButton.Size = new System.Drawing.Size(155, 34);
+            this.RejestracjaButton.Size = new System.Drawing.Size(116, 28);
             this.RejestracjaButton.TabIndex = 6;
             this.RejestracjaButton.Text = "Rejestracja";
             this.RejestracjaButton.UseVisualStyleBackColor = false;
+            this.RejestracjaButton.Click += new System.EventHandler(this.RejestracjaButton_Click);
             // 
             // CzyKandLabel
             // 
             this.CzyKandLabel.AutoSize = true;
             this.CzyKandLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.CzyKandLabel.Location = new System.Drawing.Point(283, 385);
+            this.CzyKandLabel.Location = new System.Drawing.Point(212, 313);
+            this.CzyKandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CzyKandLabel.Name = "CzyKandLabel";
-            this.CzyKandLabel.Size = new System.Drawing.Size(138, 17);
+            this.CzyKandLabel.Size = new System.Drawing.Size(104, 13);
             this.CzyKandLabel.TabIndex = 7;
             this.CzyKandLabel.Text = "Jesteś kandydatem?";
             // 
             // Logowanie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(699, 485);
+            this.ClientSize = new System.Drawing.Size(524, 394);
             this.Controls.Add(this.CzyKandLabel);
             this.Controls.Add(this.RejestracjaButton);
             this.Controls.Add(this.HasloLabel);
@@ -134,6 +143,7 @@
             this.Controls.Add(this.LoginTextbox);
             this.Controls.Add(this.LogHeader);
             this.Controls.Add(this.ZalogujButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Logowanie";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

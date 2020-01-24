@@ -35,5 +35,12 @@ namespace Dziekanat
             Plan pl = new Plan(p);
             pl.Show();
         }
+
+        private void ZmienOcLabel_Click(object sender, EventArgs e)
+        {
+            ZmienOceny zo = new ZmienOceny();
+            zo.Show();
+
+        }
     }
 }

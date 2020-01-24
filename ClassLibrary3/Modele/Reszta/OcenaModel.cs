@@ -38,5 +38,15 @@ namespace ClassLibrary3.Modele.Reszta
         /// </summary>
         public DateTime data { get; set; }
 
+        public string Full_inf
+        {
+            get
+            {
+                string Strdateonly = data.ToString("d");
+
+                return $"{Wartosc} {" - "}  {Strdateonly}";
+            }
+        }
+
     }
 }

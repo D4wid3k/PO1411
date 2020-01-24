@@ -275,6 +275,15 @@ namespace ClassLibrary3.DataAccess
             }
         }
 
-      
+        public void ZmienOcene(OcenaModel model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@Id", model.Id);
+                p.Add("@Wartosc", model.Wartosc);
+                connection.Execute("dbo.spZmianaOceny", p, commandType: CommandType.StoredProcedure);
+            }
+        }
     }
 }
