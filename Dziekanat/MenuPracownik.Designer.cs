@@ -66,7 +66,7 @@
             this.PlanLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PlanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.PlanLabel.Location = new System.Drawing.Point(145, 240);
-            this.PlanLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlanLabel.Margin = new System.Windows.Forms.Padding(2);
             this.PlanLabel.Name = "PlanLabel";
             this.PlanLabel.Size = new System.Drawing.Size(112, 50);
             this.PlanLabel.TabIndex = 7;
@@ -80,12 +80,13 @@
             this.WylogujLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WylogujLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.WylogujLabel.Location = new System.Drawing.Point(261, 370);
-            this.WylogujLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WylogujLabel.Margin = new System.Windows.Forms.Padding(2);
             this.WylogujLabel.Name = "WylogujLabel";
             this.WylogujLabel.Size = new System.Drawing.Size(112, 50);
             this.WylogujLabel.TabIndex = 5;
             this.WylogujLabel.Text = "Wyloguj";
             this.WylogujLabel.UseVisualStyleBackColor = false;
+            this.WylogujLabel.Click += new System.EventHandler(this.WylogujLabel_Click);
             // 
             // DodajOcLabel
             // 
@@ -93,7 +94,7 @@
             this.DodajOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodajOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.DodajOcLabel.Location = new System.Drawing.Point(145, 129);
-            this.DodajOcLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DodajOcLabel.Margin = new System.Windows.Forms.Padding(2);
             this.DodajOcLabel.Name = "DodajOcLabel";
             this.DodajOcLabel.Size = new System.Drawing.Size(112, 50);
             this.DodajOcLabel.TabIndex = 6;
@@ -107,7 +108,7 @@
             this.ZmienOcLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.ZmienOcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ZmienOcLabel.Location = new System.Drawing.Point(145, 184);
-            this.ZmienOcLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ZmienOcLabel.Margin = new System.Windows.Forms.Padding(2);
             this.ZmienOcLabel.Name = "ZmienOcLabel";
             this.ZmienOcLabel.Size = new System.Drawing.Size(112, 50);
             this.ZmienOcLabel.TabIndex = 8;
@@ -126,7 +127,7 @@
             this.Controls.Add(this.ImieLabel);
             this.Controls.Add(this.WylogujLabel);
             this.Controls.Add(this.WitajLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuPracownik";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

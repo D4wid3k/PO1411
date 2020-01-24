@@ -45,7 +45,6 @@
             this.DodajStudHeader.Size = new System.Drawing.Size(438, 45);
             this.DodajStudHeader.TabIndex = 9;
             this.DodajStudHeader.Text = "Dodaj studenta do kierunku";
-            this.DodajStudHeader.Click += new System.EventHandler(this.KierHeader_Click);
             // 
             // WpiszIDLabel
             // 

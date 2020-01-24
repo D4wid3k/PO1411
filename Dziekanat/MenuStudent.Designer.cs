@@ -47,7 +47,6 @@
             this.WitajLabel.Size = new System.Drawing.Size(81, 37);
             this.WitajLabel.TabIndex = 0;
             this.WitajLabel.Text = "Witaj";
-            this.WitajLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // ImieLabel
             // 
@@ -60,7 +59,6 @@
             this.ImieLabel.Size = new System.Drawing.Size(70, 37);
             this.ImieLabel.TabIndex = 1;
             this.ImieLabel.Text = "Imie";
-            this.ImieLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // WylogujButton
             // 
@@ -68,12 +66,13 @@
             this.WylogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WylogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.WylogujButton.Location = new System.Drawing.Point(244, 362);
-            this.WylogujButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WylogujButton.Margin = new System.Windows.Forms.Padding(2);
             this.WylogujButton.Name = "WylogujButton";
             this.WylogujButton.Size = new System.Drawing.Size(112, 50);
             this.WylogujButton.TabIndex = 2;
             this.WylogujButton.Text = "Wyloguj";
             this.WylogujButton.UseVisualStyleBackColor = false;
+            this.WylogujButton.Click += new System.EventHandler(this.WylogujButton_Click);
             // 
             // OcenyLabel
             // 
@@ -81,7 +80,7 @@
             this.OcenyLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.OcenyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.OcenyLabel.Location = new System.Drawing.Point(127, 136);
-            this.OcenyLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OcenyLabel.Margin = new System.Windows.Forms.Padding(2);
             this.OcenyLabel.Name = "OcenyLabel";
             this.OcenyLabel.Size = new System.Drawing.Size(112, 50);
             this.OcenyLabel.TabIndex = 3;
@@ -95,7 +94,7 @@
             this.PlanLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PlanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.PlanLabel.Location = new System.Drawing.Point(127, 191);
-            this.PlanLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlanLabel.Margin = new System.Windows.Forms.Padding(2);
             this.PlanLabel.Name = "PlanLabel";
             this.PlanLabel.Size = new System.Drawing.Size(112, 50);
             this.PlanLabel.TabIndex = 4;
@@ -109,7 +108,7 @@
             this.WyslijWniosekButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WyslijWniosekButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.WyslijWniosekButton.Location = new System.Drawing.Point(127, 246);
-            this.WyslijWniosekButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WyslijWniosekButton.Margin = new System.Windows.Forms.Padding(2);
             this.WyslijWniosekButton.Name = "WyslijWniosekButton";
             this.WyslijWniosekButton.Size = new System.Drawing.Size(112, 50);
             this.WyslijWniosekButton.TabIndex = 5;
@@ -128,7 +127,7 @@
             this.Controls.Add(this.WylogujButton);
             this.Controls.Add(this.ImieLabel);
             this.Controls.Add(this.WitajLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuStudent";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

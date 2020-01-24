@@ -39,59 +39,66 @@
             this.DziekanetLabel.AutoSize = true;
             this.DziekanetLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
             this.DziekanetLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DziekanetLabel.Location = new System.Drawing.Point(151, 53);
+            this.DziekanetLabel.Location = new System.Drawing.Point(113, 43);
+            this.DziekanetLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DziekanetLabel.Name = "DziekanetLabel";
-            this.DziekanetLabel.Size = new System.Drawing.Size(224, 45);
+            this.DziekanetLabel.Size = new System.Drawing.Size(186, 37);
             this.DziekanetLabel.TabIndex = 4;
             this.DziekanetLabel.Text = "DZIEKAN.NET";
-            this.DziekanetLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // WnioskiButton
             // 
             this.WnioskiButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.WnioskiButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WnioskiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.WnioskiButton.Location = new System.Drawing.Point(196, 225);
+            this.WnioskiButton.Location = new System.Drawing.Point(147, 183);
+            this.WnioskiButton.Margin = new System.Windows.Forms.Padding(2);
             this.WnioskiButton.Name = "WnioskiButton";
-            this.WnioskiButton.Size = new System.Drawing.Size(149, 62);
+            this.WnioskiButton.Size = new System.Drawing.Size(112, 50);
             this.WnioskiButton.TabIndex = 10;
             this.WnioskiButton.Text = "Wnioski";
             this.WnioskiButton.UseVisualStyleBackColor = false;
+            this.WnioskiButton.Click += new System.EventHandler(this.WnioskiButton_Click);
             // 
             // KierunkiButton
             // 
             this.KierunkiButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.KierunkiButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.KierunkiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.KierunkiButton.Location = new System.Drawing.Point(196, 157);
+            this.KierunkiButton.Location = new System.Drawing.Point(147, 128);
+            this.KierunkiButton.Margin = new System.Windows.Forms.Padding(2);
             this.KierunkiButton.Name = "KierunkiButton";
-            this.KierunkiButton.Size = new System.Drawing.Size(149, 62);
+            this.KierunkiButton.Size = new System.Drawing.Size(112, 50);
             this.KierunkiButton.TabIndex = 11;
             this.KierunkiButton.Text = "Kierunki";
             this.KierunkiButton.UseVisualStyleBackColor = false;
+            this.KierunkiButton.Click += new System.EventHandler(this.KierunkiButton_Click);
             // 
             // WylogujButton
             // 
             this.WylogujButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.WylogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.WylogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.WylogujButton.Location = new System.Drawing.Point(372, 365);
+            this.WylogujButton.Location = new System.Drawing.Point(279, 297);
+            this.WylogujButton.Margin = new System.Windows.Forms.Padding(2);
             this.WylogujButton.Name = "WylogujButton";
-            this.WylogujButton.Size = new System.Drawing.Size(149, 62);
+            this.WylogujButton.Size = new System.Drawing.Size(112, 50);
             this.WylogujButton.TabIndex = 12;
             this.WylogujButton.Text = "Wyloguj";
             this.WylogujButton.UseVisualStyleBackColor = false;
+            this.WylogujButton.Click += new System.EventHandler(this.WylogujButton_Click);
             // 
             // MenuDziekan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(533, 439);
+            this.ClientSize = new System.Drawing.Size(400, 357);
             this.Controls.Add(this.WylogujButton);
             this.Controls.Add(this.KierunkiButton);
             this.Controls.Add(this.WnioskiButton);
             this.Controls.Add(this.DziekanetLabel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuDziekan";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

@@ -22,11 +22,6 @@ namespace Dziekanat
             Kierunek_przypisz = _Kierunek;
         }
 
-        private void KierHeader_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void DodajStudButton_Click(object sender, EventArgs e)
         {
             if (validate())

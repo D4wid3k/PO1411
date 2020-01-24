@@ -20,20 +20,21 @@ namespace Dziekanat
             InitializeComponent();
         }
 
-      
-
         private void DodajOcLabel_Click(object sender, EventArgs e)
         {
 
-            WstawOceny wo = new WstawOceny(p);
-            wo.Show();
+            (new WstawOceny(p)).Show();
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Plan pl = new Plan(p);
-            pl.Show();
+            (new Plan(p)).Show();
+        }
+
+        private void WylogujLabel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            (new Logowanie()).Show();
         }
     }
 }

@@ -265,13 +265,30 @@ namespace ClassLibrary3.DataAccess
 
         public void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek)
         {
+            String output = "def";
+
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
             {
                 var p = new DynamicParameters();
                 p.Add("@IDUcznia", ID_User);
                 p.Add("@IDKierunek", ID_Kierunek);
 
+                try
+                {
+                    connection.Execute("dbo.spDodajUczIKier", p, commandType: CommandType.StoredProcedure);
+                }
+                catch(System.Data.SqlClient.SqlException e)
+                {
+                    if (e.Message =="The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Lista_wybranych_do_kandydata_PersonModel\". The conflict occurred in database \"Projekt_PO\", table \"dbo.PersonModel\", column 'ID'.\r\nThe statement has been terminated.")
+                    {
+                        output = "blad";
+                    }
+                }
+                if(output == "def")
+                {
                 connection.Execute("dbo.spDodajUczIKier", p, commandType: CommandType.StoredProcedure);
+                }
+
             }
         }
 

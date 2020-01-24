@@ -42,10 +42,10 @@
             this.KierListbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.KierListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.KierListbox.FormattingEnabled = true;
-            this.KierListbox.ItemHeight = 16;
-            this.KierListbox.Location = new System.Drawing.Point(38, 141);
+            this.KierListbox.Location = new System.Drawing.Point(28, 115);
+            this.KierListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KierListbox.Name = "KierListbox";
-            this.KierListbox.Size = new System.Drawing.Size(474, 194);
+            this.KierListbox.Size = new System.Drawing.Size(356, 158);
             this.KierListbox.TabIndex = 7;
             // 
             // KierHeader
@@ -53,9 +53,10 @@
             this.KierHeader.AutoSize = true;
             this.KierHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
             this.KierHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.KierHeader.Location = new System.Drawing.Point(30, 40);
+            this.KierHeader.Location = new System.Drawing.Point(22, 32);
+            this.KierHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.KierHeader.Name = "KierHeader";
-            this.KierHeader.Size = new System.Drawing.Size(143, 45);
+            this.KierHeader.Size = new System.Drawing.Size(118, 37);
             this.KierHeader.TabIndex = 8;
             this.KierHeader.Text = "Kierunki";
             // 
@@ -64,21 +65,24 @@
             this.PowrotKierButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.PowrotKierButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PowrotKierButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.PowrotKierButton.Location = new System.Drawing.Point(363, 454);
+            this.PowrotKierButton.Location = new System.Drawing.Point(272, 369);
+            this.PowrotKierButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PowrotKierButton.Name = "PowrotKierButton";
-            this.PowrotKierButton.Size = new System.Drawing.Size(149, 62);
+            this.PowrotKierButton.Size = new System.Drawing.Size(112, 50);
             this.PowrotKierButton.TabIndex = 13;
             this.PowrotKierButton.Text = "Powrot";
             this.PowrotKierButton.UseVisualStyleBackColor = false;
+            this.PowrotKierButton.Click += new System.EventHandler(this.PowrotKierButton_Click);
             // 
             // StworzKierButton
             // 
             this.StworzKierButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.StworzKierButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.StworzKierButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.StworzKierButton.Location = new System.Drawing.Point(38, 341);
+            this.StworzKierButton.Location = new System.Drawing.Point(28, 277);
+            this.StworzKierButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StworzKierButton.Name = "StworzKierButton";
-            this.StworzKierButton.Size = new System.Drawing.Size(230, 62);
+            this.StworzKierButton.Size = new System.Drawing.Size(172, 50);
             this.StworzKierButton.TabIndex = 14;
             this.StworzKierButton.Text = "Stworz kierunek";
             this.StworzKierButton.UseVisualStyleBackColor = false;
@@ -89,9 +93,10 @@
             this.ListaKierLabel.AutoSize = true;
             this.ListaKierLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.ListaKierLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ListaKierLabel.Location = new System.Drawing.Point(33, 113);
+            this.ListaKierLabel.Location = new System.Drawing.Point(25, 92);
+            this.ListaKierLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ListaKierLabel.Name = "ListaKierLabel";
-            this.ListaKierLabel.Size = new System.Drawing.Size(158, 25);
+            this.ListaKierLabel.Size = new System.Drawing.Size(123, 20);
             this.ListaKierLabel.TabIndex = 16;
             this.ListaKierLabel.Text = "Lista kierunkow:";
             // 
@@ -100,9 +105,10 @@
             this.DodajStudButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.DodajStudButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.DodajStudButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.DodajStudButton.Location = new System.Drawing.Point(282, 341);
+            this.DodajStudButton.Location = new System.Drawing.Point(212, 277);
+            this.DodajStudButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DodajStudButton.Name = "DodajStudButton";
-            this.DodajStudButton.Size = new System.Drawing.Size(230, 62);
+            this.DodajStudButton.Size = new System.Drawing.Size(172, 50);
             this.DodajStudButton.TabIndex = 17;
             this.DodajStudButton.Text = "Dodaj studenta";
             this.DodajStudButton.UseVisualStyleBackColor = false;
@@ -110,16 +116,17 @@
             // 
             // Kierunki
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(552, 545);
+            this.ClientSize = new System.Drawing.Size(414, 443);
             this.Controls.Add(this.DodajStudButton);
             this.Controls.Add(this.ListaKierLabel);
             this.Controls.Add(this.StworzKierButton);
             this.Controls.Add(this.PowrotKierButton);
             this.Controls.Add(this.KierHeader);
             this.Controls.Add(this.KierListbox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Kierunki";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

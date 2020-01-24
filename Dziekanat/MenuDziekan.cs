@@ -14,16 +14,28 @@ namespace Dziekanat
     public partial class MenuDziekan : Form
     {
 
-        public PersonModel p { get; set; }
+        public PersonModel person { get; set; }
 
         public MenuDziekan(PersonModel model)
         {
             InitializeComponent();
+            person = model;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void KierunkiButton_Click(object sender, EventArgs e)
         {
+            new Kierunki().Show();
+        }
 
+        private void WnioskiButton_Click(object sender, EventArgs e)
+        {
+            new Wnioski().Show();
+        }
+
+        private void WylogujButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            (new Logowanie()).Show();
         }
     }
 }

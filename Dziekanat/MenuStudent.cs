@@ -23,26 +23,18 @@ namespace Dziekanat
 
         private void PlanLabel_Click(object sender, EventArgs e)
         {
-            Plan pl = new Plan(p);
-            pl.Show();
+            (new Plan(p)).Show();
         }
 
         private void OcenyLabel_Click(object sender, EventArgs e)
         {
-            Oceny oc = new Oceny(p);
-            oc.Show();
+            (new Oceny(p)).Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void WylogujButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            (new Logowanie()).Show();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

@@ -47,5 +47,10 @@ namespace Dziekanat
             KierunekModel _Kierunek = (KierunekModel)KierListbox.SelectedItem;
             (new DodajStudentaDoKierunku(_Kierunek)).Show();
         }
+
+        private void PowrotKierButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
