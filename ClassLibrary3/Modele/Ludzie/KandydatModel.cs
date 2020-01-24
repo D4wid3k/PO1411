@@ -13,7 +13,7 @@ namespace ClassLibrary3.Modele.Ludzie
         /// <summary>
         /// List of application's that one's has applied 
         /// </summary>
-        public List<string> KierunekDocelowy { get; set; }
+        public string KierunekDocelowy { get; set; }
 
         public void Rejestracja()
         {

@@ -44,6 +44,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.ZarejestrujButton = new System.Windows.Forms.Button();
             this.Button = new System.Windows.Forms.Button();
+            this.KierunkiCombobox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // RejestrHeader
@@ -62,7 +63,7 @@
             // 
             this.EmailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.EmailTextbox.Location = new System.Drawing.Point(274, 96);
-            this.EmailTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EmailTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.EmailTextbox.Name = "EmailTextbox";
             this.EmailTextbox.Size = new System.Drawing.Size(216, 26);
             this.EmailTextbox.TabIndex = 3;
@@ -71,7 +72,7 @@
             // 
             this.ImieTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ImieTextbox.Location = new System.Drawing.Point(274, 176);
-            this.ImieTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ImieTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.ImieTextbox.Name = "ImieTextbox";
             this.ImieTextbox.Size = new System.Drawing.Size(216, 26);
             this.ImieTextbox.TabIndex = 4;
@@ -80,7 +81,7 @@
             // 
             this.NazwiskoTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwiskoTextbox.Location = new System.Drawing.Point(274, 218);
-            this.NazwiskoTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NazwiskoTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.NazwiskoTextbox.Name = "NazwiskoTextbox";
             this.NazwiskoTextbox.Size = new System.Drawing.Size(216, 26);
             this.NazwiskoTextbox.TabIndex = 5;
@@ -89,7 +90,7 @@
             // 
             this.PeselTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PeselTextbox.Location = new System.Drawing.Point(274, 258);
-            this.PeselTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PeselTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.PeselTextbox.Name = "PeselTextbox";
             this.PeselTextbox.Size = new System.Drawing.Size(216, 26);
             this.PeselTextbox.TabIndex = 6;
@@ -153,7 +154,7 @@
             // 
             this.HasloTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HasloTextbox.Location = new System.Drawing.Point(274, 135);
-            this.HasloTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HasloTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.HasloTextbox.Name = "HasloTextbox";
             this.HasloTextbox.Size = new System.Drawing.Size(216, 26);
             this.HasloTextbox.TabIndex = 12;
@@ -173,7 +174,7 @@
             // 
             this.PunktyRekrTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PunktyRekrTextbox.Location = new System.Drawing.Point(274, 300);
-            this.PunktyRekrTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PunktyRekrTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.PunktyRekrTextbox.Name = "PunktyRekrTextbox";
             this.PunktyRekrTextbox.Size = new System.Drawing.Size(216, 26);
             this.PunktyRekrTextbox.TabIndex = 13;
@@ -194,7 +195,7 @@
             this.ZarejestrujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ZarejestrujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ZarejestrujButton.Location = new System.Drawing.Point(236, 353);
-            this.ZarejestrujButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ZarejestrujButton.Margin = new System.Windows.Forms.Padding(2);
             this.ZarejestrujButton.Name = "ZarejestrujButton";
             this.ZarejestrujButton.Size = new System.Drawing.Size(147, 54);
             this.ZarejestrujButton.TabIndex = 16;
@@ -207,20 +208,31 @@
             this.Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.Button.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.Button.Location = new System.Drawing.Point(482, 438);
-            this.Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button.Location = new System.Drawing.Point(236, 437);
+            this.Button.Margin = new System.Windows.Forms.Padding(2);
             this.Button.Name = "Button";
-            this.Button.Size = new System.Drawing.Size(109, 48);
+            this.Button.Size = new System.Drawing.Size(147, 48);
             this.Button.TabIndex = 17;
             this.Button.Text = "Powrot";
             this.Button.UseVisualStyleBackColor = false;
+            // 
+            // KierunkiCombobox
+            // 
+            this.KierunkiCombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.KierunkiCombobox.FormattingEnabled = true;
+            this.KierunkiCombobox.Location = new System.Drawing.Point(519, 95);
+            this.KierunkiCombobox.Margin = new System.Windows.Forms.Padding(2);
+            this.KierunkiCombobox.Name = "KierunkiCombobox";
+            this.KierunkiCombobox.Size = new System.Drawing.Size(284, 27);
+            this.KierunkiCombobox.TabIndex = 18;
             // 
             // Rejestracja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(600, 496);
+            this.ClientSize = new System.Drawing.Size(863, 496);
+            this.Controls.Add(this.KierunkiCombobox);
             this.Controls.Add(this.Button);
             this.Controls.Add(this.ZarejestrujButton);
             this.Controls.Add(this.label6);
@@ -237,7 +249,7 @@
             this.Controls.Add(this.ImieTextbox);
             this.Controls.Add(this.EmailTextbox);
             this.Controls.Add(this.RejestrHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Rejestracja";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);
@@ -263,5 +275,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button ZarejestrujButton;
         private System.Windows.Forms.Button Button;
+        private System.Windows.Forms.ComboBox KierunkiCombobox;
     }
 }

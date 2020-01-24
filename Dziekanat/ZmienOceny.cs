@@ -97,7 +97,7 @@ namespace Dziekanat
         private void ZmienOceneButton_Click(object sender, EventArgs e)
         {
             O.Wartosc = (double)OcenaCombobox.SelectedItem;
-            GlobalConfig.Connections.ZmienOcene(O);
+            //GlobalConfig.Connections.ZmienOcene(O);
             Ocena.Remove(O);
             MessageBox.Show("Ocena zostala zmieniona");
             WybranaOcenaListBox.DataSource = Ocena;

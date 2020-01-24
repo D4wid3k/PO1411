@@ -37,5 +37,10 @@ namespace Dziekanat
             this.Close();
             (new Logowanie()).Show();
         }
+
+        private void RekrutacjaButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

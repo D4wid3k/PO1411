@@ -32,6 +32,7 @@
             this.WnioskiButton = new System.Windows.Forms.Button();
             this.KierunkiButton = new System.Windows.Forms.Button();
             this.WylogujButton = new System.Windows.Forms.Button();
+            this.RekrutacjaButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DziekanetLabel
@@ -88,12 +89,27 @@
             this.WylogujButton.UseVisualStyleBackColor = false;
             this.WylogujButton.Click += new System.EventHandler(this.WylogujButton_Click);
             // 
+            // RekrutacjaButton
+            // 
+            this.RekrutacjaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.RekrutacjaButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.RekrutacjaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.RekrutacjaButton.Location = new System.Drawing.Point(147, 237);
+            this.RekrutacjaButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RekrutacjaButton.Name = "RekrutacjaButton";
+            this.RekrutacjaButton.Size = new System.Drawing.Size(112, 50);
+            this.RekrutacjaButton.TabIndex = 13;
+            this.RekrutacjaButton.Text = "Rekrutacja";
+            this.RekrutacjaButton.UseVisualStyleBackColor = false;
+            this.RekrutacjaButton.Click += new System.EventHandler(this.RekrutacjaButton_Click);
+            // 
             // MenuDziekan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(400, 357);
+            this.Controls.Add(this.RekrutacjaButton);
             this.Controls.Add(this.WylogujButton);
             this.Controls.Add(this.KierunkiButton);
             this.Controls.Add(this.WnioskiButton);
@@ -112,5 +128,6 @@
         private System.Windows.Forms.Button WnioskiButton;
         private System.Windows.Forms.Button KierunkiButton;
         private System.Windows.Forms.Button WylogujButton;
+        private System.Windows.Forms.Button RekrutacjaButton;
     }
 }

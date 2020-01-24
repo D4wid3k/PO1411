@@ -28,6 +28,8 @@ namespace ClassLibrary3.DataAccess
                 p.Add("@PESEL", kandydat.PESEL);
                 p.Add("@haslo", kandydat.Haslo);
                 p.Add("@wynik_rekrutacyjny", kandydat.WynikRekrutacyjny);
+                p.Add("@kierunek", kandydat.KierunekDocelowy);
+                p.Add("@semestr", 0);
 
                 connection.Execute("dbo.spDodajKandydata", p, commandType: CommandType.StoredProcedure);
 

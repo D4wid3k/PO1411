@@ -24,6 +24,11 @@ namespace ClassLibrary3.Modele.Reszta
         public string rok_rozpoczecia { get; set; }
 
         /// <summary>
+        /// okresla ilosc miejsc
+        /// </summary>
+        public int ilosc_miejsc { get; set; }
+
+        /// <summary>
         /// List that contains class members
         /// </summary>
         public List<SemestrModel> Czlonkowie { get; set; } = new List<SemestrModel>();
