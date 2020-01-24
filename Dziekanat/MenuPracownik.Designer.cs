@@ -114,6 +114,7 @@
             this.ZmienOcLabel.TabIndex = 8;
             this.ZmienOcLabel.Text = "Zmien oceny";
             this.ZmienOcLabel.UseVisualStyleBackColor = false;
+            this.ZmienOcLabel.Click += new System.EventHandler(this.ZmienOcLabel_Click);
             // 
             // MenuPracownik
             // 

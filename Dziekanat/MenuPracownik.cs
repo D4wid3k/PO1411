@@ -36,5 +36,12 @@ namespace Dziekanat
             this.Close();
             (new Logowanie()).Show();
         }
+
+        private void ZmienOcLabel_Click(object sender, EventArgs e)
+        {
+            ZmienOceny zo = new ZmienOceny();
+            zo.Show();
+
+        }
     }
 }

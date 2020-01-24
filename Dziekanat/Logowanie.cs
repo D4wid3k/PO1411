@@ -72,5 +72,11 @@ namespace Dziekanat
             }
             Clean();
         }
+
+        private void RejestracjaButton_Click(object sender, EventArgs e)
+        {
+            Rejestracja r = new Rejestracja();
+            r.Show();
+        }
     }
 }
