@@ -17,6 +17,7 @@ namespace Dziekanat
     {
         List<KierunekModel> ListaKierunkow = new List<KierunekModel>();
         List<KierunekModel> sorted_ListaKierunkow = new List<KierunekModel>();
+        List<KandydatModel> WszyscyKandydaci = new List<KandydatModel>();
 
         public ZakonczRekrutacje()
         {
@@ -33,6 +34,10 @@ namespace Dziekanat
         {
             KierunekModel wydostan = (KierunekModel)KierunkiCombobox.SelectedItem;
             WybranyKieunekLabel.Text = wydostan.Nazwa;
+            WszyscyKandydaci = GlobalConfig.Connections.ZaladujKandydatowNaKierunek(wydostan.Nazwa);
+
+            WireUpLists();
+
         }
 
         private void zaladuj_liste()
@@ -42,10 +47,13 @@ namespace Dziekanat
 
         private void WireUpLists()
         {
-            KierunkiCombobox.DataSource = null;
-
             KierunkiCombobox.DataSource = sorted_ListaKierunkow;
             KierunkiCombobox.DisplayMember = "Nazwa";
+
+
+
+            ZakwalifikowaniListBox.DataSource = WszyscyKandydaci;
+            ZakwalifikowaniListBox.DisplayMember = "Imie";
         }
 
         private void sortuj()
@@ -61,6 +69,10 @@ namespace Dziekanat
             }
         }
 
+        //TODO - Wczytac tych co mają 0 i kierunek wydostan.Nazwa do listy ich 
+        //sortowac po ilosci pkt i wpisac do listy tych co sb dostali i ich po ID znajdowac 
+        //i zmieniac status z 0 na 1 i semestr na 1 
+        //a tych co są na dole usuwamy :)
 
     }
 }

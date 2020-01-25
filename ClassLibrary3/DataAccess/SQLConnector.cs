@@ -304,5 +304,21 @@ namespace ClassLibrary3.DataAccess
                 connection.Execute("dbo.spZmianaOceny", p, commandType: CommandType.StoredProcedure);
             }
         }
+
+        public List<KandydatModel> ZaladujKandydatowNaKierunek(string nazwa_kierunku)
+        {
+            List<KandydatModel> output;
+
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@kierunek", nazwa_kierunku);
+
+                output = connection.Query<KandydatModel>("dbo.spaWypWszystkichKandNaKier", p, commandType: CommandType.StoredProcedure).ToList();
+
+            }
+
+            return output;
+        }
     }
 }

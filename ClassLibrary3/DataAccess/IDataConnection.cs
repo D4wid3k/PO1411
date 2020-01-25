@@ -29,6 +29,7 @@ namespace ClassLibrary3.DataAccess
         List<PrzedmiotModel> ZaladujDostepnePrzedmioty(PersonModel model);
         List<PrzedmiotModel> ZaladujPrzedmioty(PersonModel model);
         List<OcenaModel> ZaladujOceny(PersonModel model);
+        List<KandydatModel> ZaladujKandydatowNaKierunek(string nazwa_kierunku);
 
 
         //update
