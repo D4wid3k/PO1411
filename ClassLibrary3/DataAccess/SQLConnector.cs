@@ -320,5 +320,34 @@ namespace ClassLibrary3.DataAccess
 
             return output;
         }
+
+        public void Zarekrutuj(List<KandydatModel> Lista_zarekrutowani)
+        {
+            foreach (KandydatModel osoba in Lista_zarekrutowani)
+            {                    
+                var p = new DynamicParameters();
+                p.Add("@ID", osoba.Id);
+
+                using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+                {
+                    connection.Execute("dbo.spZmianaPrzeszliRekrutacje", p, commandType: CommandType.StoredProcedure);
+                }
+            }
+
+        }
+
+        public void UsunNieZarekrutowanych(List<KandydatModel> Lista_NieZarekrutowani)
+        {
+            foreach (KandydatModel osoba in Lista_NieZarekrutowani)
+            {
+                var p = new DynamicParameters();
+                p.Add("@ID", osoba.Id);
+
+                using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+                {
+                    connection.Execute("dbo.spUsunNieZakwalifikowani", p, commandType: CommandType.StoredProcedure);
+                }
+            }
+        }
     }
 }
