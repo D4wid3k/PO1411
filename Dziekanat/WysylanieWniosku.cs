@@ -15,19 +15,28 @@ namespace Dziekanat
 {
     public partial class WysylanieWniosku : Form
     {
-        StudentModel dummy_student = new StudentModel();
-        WniosekModel output = new WniosekModel();
-        public WysylanieWniosku()
+       
+        WniosekModel wniosek = new WniosekModel();
+
+        PersonModel p = new PersonModel();
+
+
+        public WysylanieWniosku(PersonModel model)
         {
+            p = model;
             InitializeComponent();
         }
 
         private void Wyslij_Click(object sender, EventArgs e)
         {
-            dummy_student.Id = 1;
-            output.zawartosc = richTextBox1.Text;
-            output = GlobalConfig.Connections.DodajWniosek(output);
-            GlobalConfig.Connections.PrzypisanieFormularza(dummy_student.Id, output.Id);
+            wniosek.zawartosc = richTextBox1.Text;
+
+            wniosek = GlobalConfig.Connections.DodajWniosek(wniosek);
+            GlobalConfig.Connections.PrzypisanieFormularza(p.Id, wniosek.Id);
+
+
+            richTextBox1.Text = null;
+            MessageBox.Show("Wniosek zostal wyslany");
         }
     }
 }

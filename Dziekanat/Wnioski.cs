@@ -24,14 +24,15 @@ namespace Dziekanat
             WireUpLists();
         }
 
-        private void Wnioski_Load(object sender, EventArgs e)
-        {
-
-        }
+       
         private void UsunWniosekButton_Click(object sender, EventArgs e)
         {
 
         }
+
+      
+
+
 
         private void zaladuj_liste()
         {
@@ -45,8 +46,15 @@ namespace Dziekanat
              LekarzeListBox.DisplayMember = "FullName";*/
 
             ListaWnioskowListbox.DataSource = _Wnioski;
-            ListaWnioskowListbox.DisplayMember = "zawartosc";
+            ListaWnioskowListbox.DisplayMember = "Title";
 
         }
+
+        private void Wnioski_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
