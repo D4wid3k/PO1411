@@ -32,5 +32,10 @@ namespace Dziekanat
         {
             WniosekTextBox.Text = model.zawartosc;
         }
+
+        private void OdrzucButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -59,6 +59,7 @@
             this.OdrzucButton.TabIndex = 16;
             this.OdrzucButton.Text = "Odrzuć";
             this.OdrzucButton.UseVisualStyleBackColor = false;
+            this.OdrzucButton.Click += new System.EventHandler(this.OdrzucButton_Click);
             // 
             // WniosekTextBox
             // 
