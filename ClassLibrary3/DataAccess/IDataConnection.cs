@@ -36,5 +36,11 @@ namespace ClassLibrary3.DataAccess
         void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek);
         void Zarekrutuj(List<KandydatModel> Lista_Zarekrutowani);
         void UsunNieZarekrutowanych(List<KandydatModel> Lista_NieZarekrutowani);
+
+
+
+        void ZmienOcene(OcenaModel model);
+
+
     }
 }

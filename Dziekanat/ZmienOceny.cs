@@ -75,7 +75,7 @@ namespace Dziekanat
         private void ZobaczOcenyButton_Click(object sender, EventArgs e)
         {
 
-            StudentModel S = (StudentModel)ListaStudListbox.SelectedItem;
+            S = (StudentModel)ListaStudListbox.SelectedItem;
             Subjects = GlobalConfig.Connections.ZaladujOceny(S);
 
             OcenyListbox.DisplayMember = null;
@@ -97,11 +97,15 @@ namespace Dziekanat
         private void ZmienOceneButton_Click(object sender, EventArgs e)
         {
             O.Wartosc = (double)OcenaCombobox.SelectedItem;
-            //GlobalConfig.Connections.ZmienOcene(O);
+            GlobalConfig.Connections.ZmienOcene(O);
             Ocena.Remove(O);
             MessageBox.Show("Ocena zostala zmieniona");
             WybranaOcenaListBox.DataSource = Ocena;
             WybranaOcenaListBox.DisplayMember = "Wartosc";
+
+            Subjects = GlobalConfig.Connections.ZaladujOceny(S);
+            OcenyListbox.DataSource = Subjects;
+            OcenyListbox.DisplayMember = "Full_inf";
 
         }
 
