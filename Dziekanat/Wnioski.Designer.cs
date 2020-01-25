@@ -33,6 +33,7 @@
             this.ListWnioskowLabel = new System.Windows.Forms.Label();
             this.PowrotButton = new System.Windows.Forms.Button();
             this.WyswietlWniosekButton = new System.Windows.Forms.Button();
+            this.Refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WnioskiLabel
@@ -97,12 +98,27 @@
             this.WyswietlWniosekButton.UseVisualStyleBackColor = false;
             this.WyswietlWniosekButton.Click += new System.EventHandler(this.UsunWniosekButton_Click);
             // 
+            // Refresh
+            // 
+            this.Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.Refresh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Refresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.Refresh.Location = new System.Drawing.Point(33, 343);
+            this.Refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(112, 50);
+            this.Refresh.TabIndex = 15;
+            this.Refresh.Text = "Odswiez";
+            this.Refresh.UseVisualStyleBackColor = false;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            // 
             // Wnioski
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(416, 479);
+            this.Controls.Add(this.Refresh);
             this.Controls.Add(this.PowrotButton);
             this.Controls.Add(this.WyswietlWniosekButton);
             this.Controls.Add(this.ListWnioskowLabel);
@@ -124,5 +140,6 @@
         private System.Windows.Forms.Label ListWnioskowLabel;
         private System.Windows.Forms.Button PowrotButton;
         private System.Windows.Forms.Button WyswietlWniosekButton;
+        private System.Windows.Forms.Button Refresh;
     }
 }
