@@ -18,7 +18,9 @@ namespace Dziekanat
         List<KierunekModel> ListaKierunkow = new List<KierunekModel>();
         List<KierunekModel> sorted_ListaKierunkow = new List<KierunekModel>();
         List<KandydatModel> WszyscyKandydaci = new List<KandydatModel>();
-
+        List<KandydatModel> Kandydat_SortedList = new List<KandydatModel>();
+        List<KandydatModel> Kandydaci_przyjęci = new List<KandydatModel>();
+        List<KandydatModel> Kandydaci_odrzuceni = new List<KandydatModel>();
         public ZakonczRekrutacje()
         {
             InitializeComponent();
@@ -35,6 +37,26 @@ namespace Dziekanat
             KierunekModel wydostan = (KierunekModel)KierunkiCombobox.SelectedItem;
             WybranyKieunekLabel.Text = wydostan.Nazwa;
             WszyscyKandydaci = GlobalConfig.Connections.ZaladujKandydatowNaKierunek(wydostan.Nazwa);
+            Kandydat_SortedList = WszyscyKandydaci.OrderByDescending(o => o.WynikRekrutacyjny).ToList();
+
+            if (Kandydat_SortedList.Count < wydostan.ilosc_miejsc)
+            {
+                Kandydaci_przyjęci = Kandydat_SortedList;
+            }
+            else
+            {
+                for (int i = 0; i < wydostan.ilosc_miejsc; i++)
+                {
+                    Kandydaci_przyjęci.Add(Kandydat_SortedList[i]);
+                }
+                for (int i = wydostan.ilosc_miejsc; i < Kandydat_SortedList.Count; i++)
+                {
+                    Kandydaci_odrzuceni.Add(Kandydat_SortedList[i]);
+                }
+            }
+
+            GlobalConfig.Connections.Zarekrutuj(Kandydaci_przyjęci);
+
 
             WireUpLists();
 
@@ -52,8 +74,8 @@ namespace Dziekanat
 
 
 
-            ZakwalifikowaniListBox.DataSource = WszyscyKandydaci;
-            ZakwalifikowaniListBox.DisplayMember = "Imie";
+            ZakwalifikowaniListBox.DataSource = Kandydaci_przyjęci;
+            ZakwalifikowaniListBox.DisplayMember = "Full_Name";
         }
 
         private void sortuj()
@@ -69,8 +91,7 @@ namespace Dziekanat
             }
         }
 
-        //TODO - Wczytac tych co mają 0 i kierunek wydostan.Nazwa do listy ich 
-        //sortowac po ilosci pkt i wpisac do listy tych co sb dostali i ich po ID znajdowac 
+        //TODO - sortowac po ilosci pkt i wpisac do listy tych co sb dostali i ich po ID znajdowac 
         //i zmieniac status z 0 na 1 i semestr na 1 
         //a tych co są na dole usuwamy :)
 
