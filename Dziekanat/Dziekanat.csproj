@@ -52,6 +52,12 @@
     <Compile Include="DodajStudentaDoKierunku.Designer.cs">
       <DependentUpon>DodajStudentaDoKierunku.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularzZobacz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularzZobacz.Designer.cs">
+      <DependentUpon>FormularzZobacz.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZakonczRekrutacje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </Compile>
     <EmbeddedResource Include="DodajStudentaDoKierunku.resx">
       <DependentUpon>DodajStudentaDoKierunku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularzZobacz.resx">
+      <DependentUpon>FormularzZobacz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kierunki.resx">
       <DependentUpon>Kierunki.cs</DependentUpon>
