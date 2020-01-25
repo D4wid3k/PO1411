@@ -54,31 +54,39 @@ namespace Dziekanat
         void Sort()
         {
             //sort
-            foreach (OcenaModel M in Subjects)
+            if (Subjects != null)
             {
-                if (M.Przedmiot == "AISD")
+                foreach (OcenaModel M in Subjects)
                 {
-                    AISD.Add(M);
-                }
-                if (M.Przedmiot == "Algebra")
-                {
-                    Algebra.Add(M);
-                }
-                if (M.Przedmiot == "Fiz")
-                {
-                    Fiz.Add(M);
-                }
-                if (M.Przedmiot == "WF")
-                {
-                    WF.Add(M);
-                }
-                if (M.Przedmiot == "PO")
-                {
-                    PO.Add(M);
+                    if (M.Przedmiot == "AISD")
+                    {
+                        AISD.Add(M);
+                    }
+                    if (M.Przedmiot == "Algebra")
+                    {
+                        Algebra.Add(M);
+                    }
+                    if (M.Przedmiot == "Fiz")
+                    {
+                        Fiz.Add(M);
+                    }
+                    if (M.Przedmiot == "WF")
+                    {
+                        WF.Add(M);
+                    }
+                    if (M.Przedmiot == "PO")
+                    {
+                        PO.Add(M);
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("NIE MA NIC ");
+            }
+
         }
-    
+
         void LoadLists()
         {
             ///Marks
@@ -237,3 +245,9 @@ namespace Dziekanat
         }
     }
 }
+
+
+
+
+
+  
