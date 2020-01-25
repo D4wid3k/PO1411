@@ -53,7 +53,7 @@
             this.ListaWnioskowListbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ListaWnioskowListbox.FormattingEnabled = true;
             this.ListaWnioskowListbox.Location = new System.Drawing.Point(32, 114);
-            this.ListaWnioskowListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListaWnioskowListbox.Margin = new System.Windows.Forms.Padding(2);
             this.ListaWnioskowListbox.Name = "ListaWnioskowListbox";
             this.ListaWnioskowListbox.Size = new System.Drawing.Size(342, 225);
             this.ListaWnioskowListbox.TabIndex = 4;
@@ -75,10 +75,10 @@
             this.UsunWniosekButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.UsunWniosekButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.UsunWniosekButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.UsunWniosekButton.Location = new System.Drawing.Point(146, 343);
-            this.UsunWniosekButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsunWniosekButton.Location = new System.Drawing.Point(87, 343);
+            this.UsunWniosekButton.Margin = new System.Windows.Forms.Padding(2);
             this.UsunWniosekButton.Name = "UsunWniosekButton";
-            this.UsunWniosekButton.Size = new System.Drawing.Size(112, 50);
+            this.UsunWniosekButton.Size = new System.Drawing.Size(225, 50);
             this.UsunWniosekButton.TabIndex = 13;
             this.UsunWniosekButton.Text = "Usun wniosek";
             this.UsunWniosekButton.UseVisualStyleBackColor = false;
@@ -90,7 +90,7 @@
             this.PowrotButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PowrotButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.PowrotButton.Location = new System.Drawing.Point(295, 418);
-            this.PowrotButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PowrotButton.Margin = new System.Windows.Forms.Padding(2);
             this.PowrotButton.Name = "PowrotButton";
             this.PowrotButton.Size = new System.Drawing.Size(112, 50);
             this.PowrotButton.TabIndex = 14;
@@ -108,7 +108,7 @@
             this.Controls.Add(this.ListWnioskowLabel);
             this.Controls.Add(this.ListaWnioskowListbox);
             this.Controls.Add(this.WnioskiLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Wnioski";
             this.Text = "Dziekanat";
             this.Load += new System.EventHandler(this.Wnioski_Load);

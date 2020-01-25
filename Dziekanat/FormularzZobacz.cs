@@ -7,19 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary3;
+using ClassLibrary3.Modele.Reszta;
 
 namespace Dziekanat
 {
     public partial class FormularzZobacz : Form
     {
-        public FormularzZobacz()
+        public FormularzZobacz(WniosekModel model)
         {
-            InitializeComponent();
+            {
+                InitializeComponent();
+
+                WireUpLists(model);
+            }
         }
 
         private void ZaakceptujButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        void WireUpLists(WniosekModel model)
+        {
+            WniosekTextBox.Text = model.zawartosc;
         }
     }
 }
