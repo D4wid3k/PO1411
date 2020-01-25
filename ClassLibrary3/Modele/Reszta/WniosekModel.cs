@@ -14,9 +14,29 @@ namespace ClassLibrary3.Modele.Reszta
         public int Id { get; set; }
 
         /// <summary>
-        /// path to a txt/pdf file 
+        /// doc.
         /// </summary>
         public string zawartosc { get; set; }
+        
+
+        /// <summary>
+        /// shows title
+        /// </summary>
+        public string Title
+        {
+            get
+            {
+
+                string helper = "";
+          
+                for (int i = 0; i<5; i++)
+                {
+                    helper+=zawartosc[i];
+                    
+                }
+                return $"{helper}...";
+            }
+        }
 
     }
 }

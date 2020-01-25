@@ -40,7 +40,7 @@ namespace Dziekanat
 
         private void RekrutacjaButton_Click(object sender, EventArgs e)
         {
-
+            (new ZakonczRekrutacje()).Show();
         }
     }
 }

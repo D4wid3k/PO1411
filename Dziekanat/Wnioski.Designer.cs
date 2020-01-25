@@ -31,8 +31,8 @@
             this.WnioskiLabel = new System.Windows.Forms.Label();
             this.ListaWnioskowListbox = new System.Windows.Forms.ListBox();
             this.ListWnioskowLabel = new System.Windows.Forms.Label();
-            this.UsunWniosekButton = new System.Windows.Forms.Button();
             this.PowrotButton = new System.Windows.Forms.Button();
+            this.WyswietlWniosekButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WnioskiLabel
@@ -70,20 +70,6 @@
             this.ListWnioskowLabel.TabIndex = 5;
             this.ListWnioskowLabel.Text = "Lista przeslanych wnioskow:";
             // 
-            // UsunWniosekButton
-            // 
-            this.UsunWniosekButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.UsunWniosekButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.UsunWniosekButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.UsunWniosekButton.Location = new System.Drawing.Point(87, 343);
-            this.UsunWniosekButton.Margin = new System.Windows.Forms.Padding(2);
-            this.UsunWniosekButton.Name = "UsunWniosekButton";
-            this.UsunWniosekButton.Size = new System.Drawing.Size(225, 50);
-            this.UsunWniosekButton.TabIndex = 13;
-            this.UsunWniosekButton.Text = "Usun wniosek";
-            this.UsunWniosekButton.UseVisualStyleBackColor = false;
-            this.UsunWniosekButton.Click += new System.EventHandler(this.UsunWniosekButton_Click);
-            // 
             // PowrotButton
             // 
             this.PowrotButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
@@ -97,6 +83,20 @@
             this.PowrotButton.Text = "Powrot";
             this.PowrotButton.UseVisualStyleBackColor = false;
             // 
+            // WyswietlWniosekButton
+            // 
+            this.WyswietlWniosekButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.WyswietlWniosekButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.WyswietlWniosekButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.WyswietlWniosekButton.Location = new System.Drawing.Point(262, 343);
+            this.WyswietlWniosekButton.Margin = new System.Windows.Forms.Padding(2);
+            this.WyswietlWniosekButton.Name = "WyswietlWniosekButton";
+            this.WyswietlWniosekButton.Size = new System.Drawing.Size(112, 50);
+            this.WyswietlWniosekButton.TabIndex = 13;
+            this.WyswietlWniosekButton.Text = "Wyswietl";
+            this.WyswietlWniosekButton.UseVisualStyleBackColor = false;
+            this.WyswietlWniosekButton.Click += new System.EventHandler(this.UsunWniosekButton_Click);
+            // 
             // Wnioski
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +104,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(416, 479);
             this.Controls.Add(this.PowrotButton);
-            this.Controls.Add(this.UsunWniosekButton);
+            this.Controls.Add(this.WyswietlWniosekButton);
             this.Controls.Add(this.ListWnioskowLabel);
             this.Controls.Add(this.ListaWnioskowListbox);
             this.Controls.Add(this.WnioskiLabel);
@@ -122,7 +122,7 @@
         private System.Windows.Forms.Label WnioskiLabel;
         private System.Windows.Forms.ListBox ListaWnioskowListbox;
         private System.Windows.Forms.Label ListWnioskowLabel;
-        private System.Windows.Forms.Button UsunWniosekButton;
         private System.Windows.Forms.Button PowrotButton;
+        private System.Windows.Forms.Button WyswietlWniosekButton;
     }
 }

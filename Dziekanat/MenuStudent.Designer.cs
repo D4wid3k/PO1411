@@ -114,6 +114,7 @@
             this.WyslijWniosekButton.TabIndex = 5;
             this.WyslijWniosekButton.Text = "Wyslij Wniosek";
             this.WyslijWniosekButton.UseVisualStyleBackColor = false;
+            this.WyslijWniosekButton.Click += new System.EventHandler(this.WyslijWniosekButton_Click);
             // 
             // MenuStudent
             // 
