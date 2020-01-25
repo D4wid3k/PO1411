@@ -40,6 +40,7 @@ namespace ClassLibrary3.DataAccess
 
 
         void ZmienOcene(OcenaModel model);
+        void zmienstatus(WniosekModel model);
 
 
     }

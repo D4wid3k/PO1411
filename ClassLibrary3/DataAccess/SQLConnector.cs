@@ -349,5 +349,16 @@ namespace ClassLibrary3.DataAccess
                 }
             }
         }
+
+        public void zmienstatus(WniosekModel model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@Id", model.Id);
+                p.Add("@Wartosc", model.Stan);
+                connection.Execute("dbo.spZmianaWartoscForm", p, commandType: CommandType.StoredProcedure);
+            }
+        }
     }
 }

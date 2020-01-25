@@ -14,28 +14,39 @@ namespace Dziekanat
 {
     public partial class FormularzZobacz : Form
     {
+        WniosekModel p = new WniosekModel();
         public FormularzZobacz(WniosekModel model)
         {
             {
                 InitializeComponent();
-
-                WireUpLists(model);
+                p = model;
+                WireUpLists(p);
             }
         }
 
         private void ZaakceptujButton_Click(object sender, EventArgs e)
         {
+            p.Stan = 1;
 
-        }
+            GlobalConfig.Connections.zmienstatus(p);
 
-        void WireUpLists(WniosekModel model)
-        {
-            WniosekTextBox.Text = model.zawartosc;
+            this.Close();
         }
 
         private void OdrzucButton_Click(object sender, EventArgs e)
         {
+            p.Stan = 2;
 
+            GlobalConfig.Connections.zmienstatus(p);
+
+            this.Close();
         }
+
+        void WireUpLists(WniosekModel p)
+        {
+            WniosekTextBox.Text = p.zawartosc;
+        }
+
+      
     }
 }

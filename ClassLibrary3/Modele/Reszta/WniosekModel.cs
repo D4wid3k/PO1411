@@ -17,7 +17,12 @@ namespace ClassLibrary3.Modele.Reszta
         /// doc.
         /// </summary>
         public string zawartosc { get; set; }
-        
+
+        /// <summary>
+        /// represents application's status e.g 1-accepted
+        /// </summary>
+        public int Stan { get; set; }
+
 
         /// <summary>
         /// shows title

@@ -15,6 +15,7 @@ namespace Dziekanat
     public partial class Wnioski : Form
     {
         private List<WniosekModel> _Wnioski = new List<WniosekModel>();
+        private List<WniosekModel> temp = new List<WniosekModel>();
         public Wnioski()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace Dziekanat
         private void UsunWniosekButton_Click(object sender, EventArgs e)
         {
             new FormularzZobacz((WniosekModel)ListaWnioskowListbox.SelectedItem).Show();
+            WireUpLists();
         }
 
       
@@ -36,7 +38,15 @@ namespace Dziekanat
 
         private void zaladuj_liste()
         {
-            _Wnioski = GlobalConfig.Connections.PobierzWnioski();
+            temp = GlobalConfig.Connections.PobierzWnioski();
+
+            foreach(WniosekModel wm in temp)
+            {
+                if(wm.Stan == 0 )
+                {
+                    _Wnioski.Add(wm);
+                }
+            }
         }
 
         private void WireUpLists()
