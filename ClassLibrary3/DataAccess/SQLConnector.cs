@@ -236,6 +236,19 @@ namespace ClassLibrary3.DataAccess
             return Oceny;
         }
 
+        public List<KierunekModel> ZaładujWszystkieKierunki()
+        {
+            List<KierunekModel> output;
+
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
+            {
+
+                output = connection.Query<KierunekModel>("dbo.spWysWszystkichKierunkow").ToList();
+
+            }
+
+            return output;
+        }
 
         //update
 
@@ -249,20 +262,6 @@ namespace ClassLibrary3.DataAccess
 
                 connection.Execute("dbo.spDodajPrzypisanieForm", p, commandType: CommandType.StoredProcedure);
             }
-        }
-
-        public List<KierunekModel> ZaładujWszystkieKierunki()
-        {
-            List<KierunekModel> output;
-
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Projekt_PO")))
-            {
-
-                output = connection.Query<KierunekModel>("dbo.spWysWszystkichKierunkow").ToList();
-
-            }
-
-            return output;
         }
 
         public void PrzypisanieKIerunekDoUcznia(int ID_User, int ID_Kierunek)

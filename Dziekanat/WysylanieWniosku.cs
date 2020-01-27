@@ -38,5 +38,10 @@ namespace Dziekanat
             richTextBox1.Text = null;
             MessageBox.Show("Wniosek zostal wyslany");
         }
+
+        private void PowrotButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

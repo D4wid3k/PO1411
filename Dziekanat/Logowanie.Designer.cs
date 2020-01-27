@@ -44,7 +44,7 @@
             this.ZalogujButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ZalogujButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ZalogujButton.Location = new System.Drawing.Point(207, 201);
-            this.ZalogujButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ZalogujButton.Margin = new System.Windows.Forms.Padding(2);
             this.ZalogujButton.Name = "ZalogujButton";
             this.ZalogujButton.Size = new System.Drawing.Size(116, 54);
             this.ZalogujButton.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             this.LoginTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LoginTextbox.Location = new System.Drawing.Point(166, 113);
-            this.LoginTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.LoginTextbox.Name = "LoginTextbox";
             this.LoginTextbox.Size = new System.Drawing.Size(198, 26);
             this.LoginTextbox.TabIndex = 2;
@@ -77,10 +77,11 @@
             // 
             this.HasloTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.HasloTextbox.Location = new System.Drawing.Point(166, 160);
-            this.HasloTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HasloTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.HasloTextbox.Name = "HasloTextbox";
             this.HasloTextbox.Size = new System.Drawing.Size(198, 26);
             this.HasloTextbox.TabIndex = 3;
+            this.HasloTextbox.UseSystemPasswordChar = true;
             // 
             // LoginLabel
             // 
@@ -110,7 +111,7 @@
             this.RejestracjaButton.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.RejestracjaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.RejestracjaButton.Location = new System.Drawing.Point(207, 329);
-            this.RejestracjaButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RejestracjaButton.Margin = new System.Windows.Forms.Padding(2);
             this.RejestracjaButton.Name = "RejestracjaButton";
             this.RejestracjaButton.Size = new System.Drawing.Size(116, 28);
             this.RejestracjaButton.TabIndex = 6;
@@ -143,7 +144,7 @@
             this.Controls.Add(this.LoginTextbox);
             this.Controls.Add(this.LogHeader);
             this.Controls.Add(this.ZalogujButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Logowanie";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

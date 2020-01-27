@@ -22,7 +22,7 @@ namespace Dziekanat
             //initialize Data base 
             ClassLibrary3.GlobalConfig.InitializeConnections();
 
-            Application.Run(new Wnioski());
+            Application.Run(new Logowanie());
         }
     }
 }

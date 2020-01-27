@@ -40,17 +40,19 @@
             this.WyslijWniosekLabel.AutoSize = true;
             this.WyslijWniosekLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold);
             this.WyslijWniosekLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.WyslijWniosekLabel.Location = new System.Drawing.Point(29, 30);
+            this.WyslijWniosekLabel.Location = new System.Drawing.Point(22, 24);
+            this.WyslijWniosekLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WyslijWniosekLabel.Name = "WyslijWniosekLabel";
-            this.WyslijWniosekLabel.Size = new System.Drawing.Size(241, 45);
+            this.WyslijWniosekLabel.Size = new System.Drawing.Size(196, 37);
             this.WyslijWniosekLabel.TabIndex = 4;
             this.WyslijWniosekLabel.Text = "Wyslij wniosek";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(42, 150);
+            this.richTextBox1.Location = new System.Drawing.Point(32, 122);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(494, 300);
+            this.richTextBox1.Size = new System.Drawing.Size(372, 244);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -59,9 +61,10 @@
             this.PoleTekstRichTextbox.AutoSize = true;
             this.PoleTekstRichTextbox.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.PoleTekstRichTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.PoleTekstRichTextbox.Location = new System.Drawing.Point(38, 124);
+            this.PoleTekstRichTextbox.Location = new System.Drawing.Point(28, 101);
+            this.PoleTekstRichTextbox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PoleTekstRichTextbox.Name = "PoleTekstRichTextbox";
-            this.PoleTekstRichTextbox.Size = new System.Drawing.Size(303, 23);
+            this.PoleTekstRichTextbox.Size = new System.Drawing.Size(249, 19);
             this.PoleTekstRichTextbox.TabIndex = 6;
             this.PoleTekstRichTextbox.Text = "Pole tekstowe do utworzenia wniosku:";
             // 
@@ -70,23 +73,24 @@
             this.PowrotButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.PowrotButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.PowrotButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.PowrotButton.Location = new System.Drawing.Point(423, 531);
-            this.PowrotButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PowrotButton.Location = new System.Drawing.Point(317, 431);
+            this.PowrotButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PowrotButton.Name = "PowrotButton";
-            this.PowrotButton.Size = new System.Drawing.Size(149, 62);
+            this.PowrotButton.Size = new System.Drawing.Size(112, 50);
             this.PowrotButton.TabIndex = 15;
             this.PowrotButton.Text = "Powrot";
             this.PowrotButton.UseVisualStyleBackColor = false;
+            this.PowrotButton.Click += new System.EventHandler(this.PowrotButton_Click);
             // 
             // Wyslij
             // 
             this.Wyslij.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.Wyslij.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.Wyslij.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.Wyslij.Location = new System.Drawing.Point(208, 455);
-            this.Wyslij.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Wyslij.Location = new System.Drawing.Point(156, 370);
+            this.Wyslij.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Wyslij.Name = "Wyslij";
-            this.Wyslij.Size = new System.Drawing.Size(149, 62);
+            this.Wyslij.Size = new System.Drawing.Size(112, 50);
             this.Wyslij.TabIndex = 16;
             this.Wyslij.Text = "Wyslij";
             this.Wyslij.UseVisualStyleBackColor = false;
@@ -94,15 +98,16 @@
             // 
             // WysylanieWniosku
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(584, 604);
+            this.ClientSize = new System.Drawing.Size(438, 491);
             this.Controls.Add(this.Wyslij);
             this.Controls.Add(this.PowrotButton);
             this.Controls.Add(this.PoleTekstRichTextbox);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.WyslijWniosekLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "WysylanieWniosku";
             this.Text = "Dziekanat";
             this.ResumeLayout(false);

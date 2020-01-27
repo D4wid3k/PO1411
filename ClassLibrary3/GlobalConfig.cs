@@ -22,7 +22,7 @@ namespace ClassLibrary3
             //dodaje sql do listy połączeń
             Connections = sql;
 
-            //siusiak
+            
         }
 
         public static string CnnString(string name)
